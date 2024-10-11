@@ -2,7 +2,7 @@ import './App.css'
 import Footer from './components/Footer'
 import NavBar from './components/NavBar'
 import Hero from './components/Hero'
-import Manager from './components/Manager'
+import Manager from './components/Committee'
 import Partenaires from './components/Partenaires'
 import Info from './components/Info'
 

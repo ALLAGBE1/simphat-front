@@ -1,9 +1,10 @@
 import { motion } from "framer-motion"
 import ProfilComite from "./ProfilComite"
 // import ProfilComite from "./ProfilComite"
+// import Hounkpatin from "../assets/forPages/benjaminHounkpatin.png"
 
 
-const Manager = () => {
+const Committee = () => {
   return (
     <div className="container mx-auto">
         <motion.h1 
@@ -43,7 +44,7 @@ const Manager = () => {
   )
 }
 
-export default Manager
+export default Committee
 
 
 
