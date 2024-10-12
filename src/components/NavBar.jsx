@@ -1,31 +1,84 @@
-import logo from "../assets/simphatLogo.png"
-
-
+import { useState } from 'react';
+import logo from "../assets/simphatLogo.png";
 
 const Navbar = () => {
+  // État pour gérer l'affichage du menu déroulant
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <nav className='text-white px-8 md:px-16 lg:px-24'>
-        <div className='container py-2 flex justify-center md:justify-between items-center'>
-            <img src={logo} alt="" width={150} height={125} className="hidden md:inline" />
-            <div className="flex flex-col py-10">
-              <div className='space-x-6'>
-                  <a href="#home" className='hover:text-gray-400 text-black'>ACCUEIL</a>
-                  <a href="#about" className='hover:text-gray-400 text-black'>MENU</a>
-                  <a href="#service" className='hover:text-gray-400 text-black'>BLOG</a>
-                  <a href="#project" className='hover:text-gray-400 text-black'>BOUTIQUE</a>
-                  <a href="#contact" className='hover:text-gray-400 text-black'>CONTACTS</a>
+      <div className='container py-2 flex justify-center md:justify-between items-center'>
+        <img src={logo} alt="" width={150} height={125} className="hidden md:inline" />
+        <div className="flex flex-col py-10 relative">
+          <div className='space-x-6'>
+            <a href="#home" className='hover:text-gray-400 text-black'>ACCUEIL</a>
+            
+            {/* MENU avec menu déroulant */}
+            <div
+              className="relative inline-block text-left"
+              onMouseEnter={() => setIsMenuOpen(true)}
+              onMouseLeave={() => setIsMenuOpen(false)}
+            >
+              <a href="#" className='hover:text-gray-400 text-black cursor-pointer'>MENU</a>
 
-                  <button className='bg-green-500 text-white hidden md:inline
-                    transform transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-full'>Se connecter</button>
-              </div>
-              
-            </div>    
+              {/* Sous-menu qui s'affiche au survol */}
+              {isMenuOpen && (
+                <div className="absolute mt-2 py-2 w-48 bg-white rounded-md shadow-xl z-20">
+                  <a href="#participer" className="block px-4 py-2 text-black hover:bg-gray-100">Participer</a>
+                  <a href="#exposition" className="block px-4 py-2 text-black hover:bg-gray-100">Exposition / Ventes</a>
+                  <a href="#explorer" className="block px-4 py-2 text-black hover:bg-gray-100">Explorer</a>
+                  <a href="#commander" className="block px-4 py-2 text-black hover:bg-gray-100">Commander</a>
+                </div>
+              )}
+            </div>
+
+            <a href="#service" className='hover:text-gray-400 text-black'>BLOG</a>
+            <a href="#project" className='hover:text-gray-400 text-black'>BOUTIQUE</a>
+            <a href="#contact" className='hover:text-gray-400 text-black'>CONTACTS</a>
+
+            <button className='bg-green-500 text-white hidden md:inline
+              transform transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-full'>Se connecter</button>
+          </div>
         </div>
+      </div>
     </nav>
   )
 }
 
-export default Navbar
+export default Navbar;
+
+
+////////////
+
+
+// import logo from "../assets/simphatLogo.png"
+
+
+
+// const Navbar = () => {
+//   return (
+//     <nav className='text-white px-8 md:px-16 lg:px-24'>
+//         <div className='container py-2 flex justify-center md:justify-between items-center'>
+//             <img src={logo} alt="" width={150} height={125} className="hidden md:inline" />
+//             <div className="flex flex-col py-10">
+//               <div className='space-x-6'>
+//                   <a href="#home" className='hover:text-gray-400 text-black'>ACCUEIL</a>
+//                   <a href="#about" className='hover:text-gray-400 text-black'>MENU</a>
+//                   <a href="#service" className='hover:text-gray-400 text-black'>BLOG</a>
+//                   <a href="#project" className='hover:text-gray-400 text-black'>BOUTIQUE</a>
+//                   <a href="#contact" className='hover:text-gray-400 text-black'>CONTACTS</a>
+
+//                   <button className='bg-green-500 text-white hidden md:inline
+//                     transform transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-full'>Se connecter</button>
+//               </div>
+              
+//             </div>    
+//         </div>
+//     </nav>
+//   )
+// }
+
+// export default Navbar
 
 
 
