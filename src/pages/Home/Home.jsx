@@ -8,6 +8,8 @@ import RenderCommittee from "../../components/RenderCommittee"
 import '../../App.css';
 import Partenaires from "../../components/Partenaires"
 import ExpositionTicket from "../../components/ExpositionTicket"
+import Participer from "../../components/Participer"
+import Gala from "../../components/Gala"
 
 
 
@@ -52,8 +54,10 @@ function Home() {
             </div>
 
             <Partenaires />
-
+            <Participer />
             <ExpositionTicket />
+            <Gala />
+            
 
         </div>
     )

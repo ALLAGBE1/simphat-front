@@ -16,8 +16,8 @@ const ExpositionTicket = () => {
     <div className="container mx-auto text-white py-20" id="exposition">
       <div className="px-8 md:px-16 lg:px-24">
         <h2 className="text-customGreen text-4xl font-bold text-center mb-12">Exposition / Ventes</h2>
-        <div className="flex flex-col md:flex-row  md:space-x-12 items-start">
-            <div className="">
+        <div className="flex flex-col md:flex-row md:space-x-12 items-start">
+            <div className="w-full md:w-1/2">
                 <img
                     src={TicketExposition}
                     alt=""
@@ -25,45 +25,47 @@ const ExpositionTicket = () => {
                 />
             </div>
 
-            <div className="">
-                <div className="mb-12">
-                    <motion.span 
-                        variants={container(0.5)}
-                        initial="hidden"
-                        animate="visible"
-                        className="bg-customGreen text-white mb-20 text-4xl tracking-tight py-2 px-4 rounded-lg hover:bg-green-600 cursor-pointer transition duration-300 ease-in-out lg:items-start">
-                        CONTACTS-NOUS
-                    </motion.span>
-                </div>
+            <div className="w-full md:w-1/2">
+                <div className="flex flex-col">
+                    <div className="mb-12">
+                        <motion.span 
+                            variants={container(0.5)}
+                            initial="hidden"
+                            animate="visible"
+                            className="bg-customGreen text-white mb-20 text-4xl tracking-tight py-2 px-4 rounded-lg hover:bg-green-600 cursor-pointer transition duration-300 ease-in-out lg:items-start">
+                            CONTACTS-NOUS
+                        </motion.span>
+                    </div>
 
-                <div className="flex space-x-4 my-4 mb-8">
-                    <a href="#" className="text-gray-400 hover:text-[#4CAF50]">
-                        <FaLinkedin />
-                    </a>
-                    <a href="#" className="text-gray-400 hover:text-[#4CAF50]">
-                        <FaWhatsapp />
-                    </a>
-                    <a href="#" className="text-gray-400 hover:text-[#4CAF50]">
-                        <FaFacebook />
-                    </a>
-                    <a href="#" className="text-gray-400 hover:text-[#4CAF50]">
-                        <FaInstagram />
-                    </a>
-                    <a href="#" className="text-gray-400 hover:text-[#4CAF50]">
-                        <FaTwitter />
-                    </a>
-                    <a href="#" className="text-gray-400 hover:text-[#4CAF50]">
-                        <FaXingSquare />
-                    </a>
-                    <a href="#" className="text-gray-400 hover:text-[#4CAF50]">
-                        <FaTiktok />
-                    </a>
-                </div>
+                    <div className="flex space-x-4 my-4 mb-8">
+                        <a href="#" className="text-gray-400 hover:text-[#4CAF50]">
+                            <FaLinkedin />
+                        </a>
+                        <a href="#" className="text-gray-400 hover:text-[#4CAF50]">
+                            <FaWhatsapp />
+                        </a>
+                        <a href="#" className="text-gray-400 hover:text-[#4CAF50]">
+                            <FaFacebook />
+                        </a>
+                        <a href="#" className="text-gray-400 hover:text-[#4CAF50]">
+                            <FaInstagram />
+                        </a>
+                        <a href="#" className="text-gray-400 hover:text-[#4CAF50]">
+                            <FaTwitter />
+                        </a>
+                        <a href="#" className="text-gray-400 hover:text-[#4CAF50]">
+                            <FaXingSquare />
+                        </a>
+                        <a href="#" className="text-gray-400 hover:text-[#4CAF50]">
+                            <FaTiktok />
+                        </a>
+                    </div>
 
-                <div className="md:my-0">
-                    <p className="text-customGreen font-bold " style={{fontSize: 64}}>
-                        <span className="" style={{fontSize: 24}}>+229</span> 67 78 78 06
-                    </p>
+                    <div className="md:my-0">
+                        <p className="text-customGreen font-bold " style={{fontSize: 64}}>
+                            <span className="" style={{fontSize: 24}}>+229</span> 67 78 78 06
+                        </p>
+                    </div>
                 </div>
             </div>
 

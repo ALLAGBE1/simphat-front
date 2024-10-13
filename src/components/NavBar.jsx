@@ -26,8 +26,8 @@ const Navbar = () => {
                 <div className="absolute mt-2 py-2 w-48 bg-white rounded-md shadow-xl z-20">
                   <a href="#participer" className="block px-4 py-2 text-black hover:bg-gray-100">Participer</a>
                   <a href="#exposition" className="block px-4 py-2 text-black hover:bg-gray-100">Exposition / Ventes</a>
-                  <a href="#explorer" className="block px-4 py-2 text-black hover:bg-gray-100">Explorer</a>
-                  <a href="#commander" className="block px-4 py-2 text-black hover:bg-gray-100">Commander</a>
+                  <a href="#diner" className="block px-4 py-2 text-black hover:bg-gray-100">Diner de gala</a>
+                  <a href="#consulter" className="block px-4 py-2 text-black hover:bg-gray-100">CONSULTER LES THEMES DE CONFERENCES</a>
                 </div>
               )}
             </div>
