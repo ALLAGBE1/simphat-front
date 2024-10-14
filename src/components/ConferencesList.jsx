@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import { plantList } from '../constants/plantList'
-import PlantItem from './PlantItem'
+import ConferenceItem from './ConferenceItem'
 import Categories from './Categories'
 import PropTypes from "prop-types"
 
 
-function ShoppingList({ cart, updateCart }) {
+function ConferencesList({ cart, updateCart }) {
 	const [activeCategory, setActiveCategory] = useState('')
 	const categories = plantList.reduce(
 		(acc, elem) =>
@@ -40,7 +40,7 @@ function ShoppingList({ cart, updateCart }) {
 				{plantList.map(({ id, cover, name, water, light, price, category }) =>
 					!activeCategory || activeCategory === category ? (
 						<div key={id}>
-							<PlantItem
+							<ConferenceItem
 								cover={cover}
 								name={name}
 								water={water}
@@ -57,9 +57,9 @@ function ShoppingList({ cart, updateCart }) {
 }
 
 // Ajout des propTypes pour valider les props
-ShoppingList.propTypes = {
+ConferencesList.propTypes = {
     cart: PropTypes.string.isRequired,
     updateCart: PropTypes.string.isRequired,
   }
 
-export default ShoppingList
+export default ConferencesList

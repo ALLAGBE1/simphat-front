@@ -1,4 +1,4 @@
-import ShoppingList from "../../components/ShoppingList";
+import ConferencesList from "../../components/ConferencesList";
 
 
 
@@ -7,8 +7,7 @@ function Conferences() {
     return (
         <div className="container mx-auto">
         
-           {/* <div className="">Oui je suis là</div> */}
-           <ShoppingList />
+           <ConferencesList />
 
         </div>
     )

@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 
 
 
-const PlantItem = ({ cover, name, price, text }) => {
+const ConferenceItem = ({ cover, name, price, text }) => {
     return (
       <div className="max-w-sm rounded overflow-hidden shadow-lg h-[345px]">
         <img className="w-full" src={cover} alt="Card image cap" />
@@ -21,7 +21,7 @@ const PlantItem = ({ cover, name, price, text }) => {
   };
   
   // Ajout des propTypes pour valider les props
-  PlantItem.propTypes = {
+  ConferenceItem.propTypes = {
     cover: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     price: PropTypes.string,
@@ -29,7 +29,7 @@ const PlantItem = ({ cover, name, price, text }) => {
   }
 
 
-export default PlantItem
+export default ConferenceItem
 
 
 
