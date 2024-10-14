@@ -1,4 +1,20 @@
 import antioxidants from '../assets/antioxidants.png'
+import image2 from '../assets/image2.png'
+import image3 from '../assets/image3.png'
+import image4 from '../assets/image4.png'
+import image5 from '../assets/image5.png'
+import image6 from '../assets/image6.png'
+import image7 from '../assets/image7.png'
+import image8 from '../assets/image8.png'
+import image9 from '../assets/image9.png'
+import image10 from '../assets/image10.png'
+import image11 from '../assets/image11.png'
+import image12 from '../assets/image12.png'
+import image13 from '../assets/image13.png'
+import image14 from '../assets/image14.png'
+import image15 from '../assets/image15.png'
+import image16 from '../assets/image16.png'
+import image17 from '../assets/image17.png'
 
 
 export const plantList = [
@@ -18,7 +34,7 @@ export const plantList = [
 		id: '2',
 		light: 3,
 		water: 1,
-		cover: antioxidants,
+		cover: image2,
 		price: 16
 	},
 
@@ -28,7 +44,7 @@ export const plantList = [
 		id: '3',
 		light: 1,
 		water: 2,
-		cover: antioxidants,
+		cover: image3,
 
 		price: 9
 	},
@@ -38,7 +54,7 @@ export const plantList = [
 		id: '4',
 		light: 2,
 		water: 3,
-		cover: antioxidants,
+		cover: image4,
 
 		price: 20
 	},
@@ -48,7 +64,7 @@ export const plantList = [
 		id: '5',
 		light: 3,
 		water: 1,
-		cover: antioxidants,
+		cover: image5,
 		price: 25
 	},
 
@@ -58,7 +74,7 @@ export const plantList = [
 		id: '6',
 		light: 2,
 		water: 1,
-		cover: antioxidants,
+		cover: image6,
 		price: 6
 	},
 	{
@@ -68,7 +84,7 @@ export const plantList = [
 		bestSale: true,
 		light: 2,
 		water: 3,
-		cover: antioxidants,
+		cover: image7,
 		price: 5
 	},
 	{
@@ -77,7 +93,7 @@ export const plantList = [
 		id: '8',
 		light: 2,
 		water: 1,
-		cover: antioxidants,
+		cover: image8,
 		price: 8
 	},
 
@@ -87,7 +103,7 @@ export const plantList = [
 		id: '9',
 		light: 2,
 		water: 2,
-		cover: antioxidants,
+		cover: image9,
 		price: 4
 	},
 
@@ -97,7 +113,7 @@ export const plantList = [
 		id: '10',
 		light: 2,
 		water: 2,
-		cover: antioxidants,
+		cover: image10,
 		price: 4
 	},
 	{
@@ -106,7 +122,7 @@ export const plantList = [
 		id: '11',
 		light: 2,
 		water: 2,
-		cover: antioxidants,
+		cover: image11,
 		price: 4
 	},
 	{
@@ -115,7 +131,7 @@ export const plantList = [
 		id: '12',
 		light: 2,
 		water: 2,
-		cover: antioxidants,
+		cover: image12,
 		price: 4
 	},
 	{
@@ -124,7 +140,7 @@ export const plantList = [
 		id: '13',
 		light: 2,
 		water: 2,
-		cover: antioxidants,
+		cover: image13,
 		price: 4
 	},
 	{
@@ -133,7 +149,7 @@ export const plantList = [
 		id: '14',
 		light: 2,
 		water: 2,
-		cover: antioxidants,
+		cover: image14,
 		price: 4
 	},
 	{
@@ -142,7 +158,7 @@ export const plantList = [
 		id: '15',
 		light: 2,
 		water: 2,
-		cover: antioxidants,
+		cover: image15,
 		price: 4
 	},
 	{
@@ -151,7 +167,7 @@ export const plantList = [
 		id: '16',
 		light: 2,
 		water: 2,
-		cover: antioxidants,
+		cover: image16,
 		price: 4
 	},
 	{
@@ -160,7 +176,7 @@ export const plantList = [
 		id: '17',
 		light: 2,
 		water: 2,
-		cover: antioxidants,
+		cover: image17,
 		price: 4
 	}
 ]
