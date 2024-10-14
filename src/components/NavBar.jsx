@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import logo from "../assets/simphatLogo.png";
 
@@ -11,7 +12,9 @@ const Navbar = () => {
         <img src={logo} alt="" width={150} height={125} className="hidden md:inline" />
         <div className="flex flex-col py-10 relative">
           <div className='space-x-6'>
-            <a href="#home" className='hover:text-gray-400 text-black'>ACCUEIL</a>
+            {/* <a href="#home" className='hover:text-gray-400 text-black'>ACCUEIL</a> */}
+            {/* <a href="Home.jsx" className='hover:text-gray-400 text-black'>ACCUEIL</a> */}
+            <Link to="/" className='hover:text-gray-400 text-black'>ACCUEIL</Link>
             
             {/* MENU avec menu déroulant */}
             <div
@@ -27,13 +30,18 @@ const Navbar = () => {
                   <a href="#participer" className="block px-4 py-2 text-black hover:bg-gray-100">Participer</a>
                   <a href="#exposition" className="block px-4 py-2 text-black hover:bg-gray-100">Exposition / Ventes</a>
                   <a href="#diner" className="block px-4 py-2 text-black hover:bg-gray-100">Diner de gala</a>
-                  <a href="#consulter" className="block px-4 py-2 text-black hover:bg-gray-100">CONSULTER LES THEMES DE CONFERENCES</a>
+                  {/* <a href="#conferences" className="block px-4 py-2 text-black hover:bg-gray-100">CONSULTER LES THEMES DE CONFERENCES</a> */}
                 </div>
               )}
             </div>
 
-            <a href="#service" className='hover:text-gray-400 text-black'>BLOG</a>
+            {/* <a href="#service" className='hover:text-gray-400 text-black'>BLOG</a>
+            <a href="Conferences.jsx" className='hover:text-gray-400 text-black'>CONFÉRENCES</a>
             <a href="#project" className='hover:text-gray-400 text-black'>BOUTIQUE</a>
+            <a href="#contact" className='hover:text-gray-400 text-black'>CONTACTS</a> */}
+
+            <Link to="/conferences" className='hover:text-gray-400 text-black'>CONFÉRENCES</Link>
+            <Link to="/blog" className='hover:text-gray-400 text-black'>BLOG</Link>
             <a href="#contact" className='hover:text-gray-400 text-black'>CONTACTS</a>
 
             <button className='bg-green-500 text-white hidden md:inline
