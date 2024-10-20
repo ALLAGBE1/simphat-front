@@ -8,8 +8,8 @@ export const Header = () => {
         
         {/* Logo */}
         <div className="flex-shrink-0">
-          {/* <img src={logo} alt="logo" className="w-24 h-auto md:w-32" /> */}
-          <img src={logo} alt="logo" className="object-cover" />
+          <img src={logo} alt="logo" className="w-24 h-auto md:w-32" />
+          {/* <img src={logo} alt="logo" className="object-cover" /> */}
         </div>
 
         {/* Textes */}
