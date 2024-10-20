@@ -9,6 +9,8 @@ export default {
     extend: {
       colors: {
         customGreen: '#014E13', // Ajoute ta couleur ici
+        customYellow: '#FFED00',
+        customWhite: '#FFFFFF',
       },
     },
   },

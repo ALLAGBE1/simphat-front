@@ -1,48 +1,68 @@
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import logo from "../assets/simphatLogo.png";
 
 const Navbar = () => {
   // État pour gérer l'affichage du menu déroulant
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  // Référence pour le conteneur du menu
+  const menuRef = useRef(null);
+
+  // Fonction pour gérer le clic sur MENU et basculer l'état du menu
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  // Fonction pour fermer le menu si on clique à l'extérieur
+  const handleClickOutside = (event) => {
+    if (menuRef.current && !menuRef.current.contains(event.target)) {
+      setIsMenuOpen(false);  // Fermer le menu si le clic est en dehors
+    }
+  };
+
+  // Ajouter l'écouteur d'événements quand le composant est monté
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+    
+    // Nettoyer l'écouteur d'événements quand le composant est démonté
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   return (
     <nav className='text-white px-8 md:px-16 lg:px-24'>
       <div className='container py-2 flex justify-center md:justify-between items-center'>
         <img src={logo} alt="" width={150} height={125} className="hidden md:inline" />
-        <div className="flex flex-col py-10 relative">
+        <div className="flex flex-col py-10 relative" ref={menuRef}>
           <div className='space-x-6'>
-            {/* <a href="#home" className='hover:text-gray-400 text-black'>ACCUEIL</a> */}
-            {/* <a href="Home.jsx" className='hover:text-gray-400 text-black'>ACCUEIL</a> */}
             <Link to="/" className='hover:text-gray-400 text-black'>ACCUEIL</Link>
             
-            {/* MENU avec menu déroulant */}
-            <div
-              className="relative inline-block text-left"
-              onMouseEnter={() => setIsMenuOpen(true)}
-              onMouseLeave={() => setIsMenuOpen(false)}
-            >
-              <a href="#" className='hover:text-gray-400 text-black cursor-pointer'>MENU</a>
+            {/* MENU avec menu déroulant activé par clic */}
+            <div className="relative inline-block text-left">
+              <Link to="/" className='hover:text-gray-400 text-black'>
+                <button
+                  onClick={toggleMenu}  // Toggle le menu au clic
+                  className='hover:text-gray-400 text-black cursor-pointer'
+                >
+                  MENU
+                </button>
+              </Link>
 
-              {/* Sous-menu qui s'affiche au survol */}
+              {/* Sous-menu qui s'affiche au clic */}
               {isMenuOpen && (
                 <div className="absolute mt-2 py-2 w-48 bg-white rounded-md shadow-xl z-20">
                   <a href="#participer" className="block px-4 py-2 text-black hover:bg-gray-100">Participer</a>
                   <a href="#exposition" className="block px-4 py-2 text-black hover:bg-gray-100">Exposition / Ventes</a>
                   <a href="#diner" className="block px-4 py-2 text-black hover:bg-gray-100">Diner de gala</a>
-                  {/* <a href="#conferences" className="block px-4 py-2 text-black hover:bg-gray-100">CONSULTER LES THEMES DE CONFERENCES</a> */}
                 </div>
               )}
             </div>
 
-            {/* <a href="#service" className='hover:text-gray-400 text-black'>BLOG</a>
-            <a href="Conferences.jsx" className='hover:text-gray-400 text-black'>CONFÉRENCES</a>
-            <a href="#project" className='hover:text-gray-400 text-black'>BOUTIQUE</a>
-            <a href="#contact" className='hover:text-gray-400 text-black'>CONTACTS</a> */}
-
             <Link to="/conferences" className='hover:text-gray-400 text-black'>CONFÉRENCES</Link>
             <Link to="/blog" className='hover:text-gray-400 text-black'>BLOG</Link>
-            <a href="#contact" className='hover:text-gray-400 text-black'>CONTACTS</a>
+            <Link to="/contact" className='hover:text-gray-400 text-black'>CONTACTS</Link>
 
             <button className='bg-green-500 text-white hidden md:inline
               transform transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-full'>Se connecter</button>
@@ -50,10 +70,127 @@ const Navbar = () => {
         </div>
       </div>
     </nav>
-  )
+  );
 }
 
 export default Navbar;
+
+
+
+//////////////////
+
+
+// import { Link } from 'react-router-dom';
+// import { useState } from 'react';
+// import logo from "../assets/simphatLogo.png";
+
+// const Navbar = () => {
+//   // État pour gérer l'affichage du menu déroulant
+//   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+//   // Fonction pour gérer le clic sur MENU et basculer l'état du menu
+//   const toggleMenu = () => {
+//     setIsMenuOpen(!isMenuOpen);
+//   };
+
+//   return (
+//     <nav className='text-white px-8 md:px-16 lg:px-24'>
+//       <div className='container py-2 flex justify-center md:justify-between items-center'>
+//         <img src={logo} alt="" width={150} height={125} className="hidden md:inline" />
+//         <div className="flex flex-col py-10 relative">
+//           <div className='space-x-6'>
+//             <Link to="/" className='hover:text-gray-400 text-black'>ACCUEIL</Link>
+            
+//             {/* MENU avec menu déroulant activé par clic */}
+//             <div className="relative inline-block text-left">
+//               <button
+//                 onClick={toggleMenu}  // Toggle le menu au clic
+//                 className='hover:text-gray-400 text-black cursor-pointer'
+//               >
+//                 MENU
+//               </button>
+
+//               {/* Sous-menu qui s'affiche au clic */}
+//               {isMenuOpen && (
+//                 <div className="absolute mt-2 py-2 w-48 bg-white rounded-md shadow-xl z-20">
+//                   <a href="#participer" className="block px-4 py-2 text-black hover:bg-gray-100">Participer</a>
+//                   <a href="#exposition" className="block px-4 py-2 text-black hover:bg-gray-100">Exposition / Ventes</a>
+//                   <a href="#diner" className="block px-4 py-2 text-black hover:bg-gray-100">Diner de gala</a>
+//                 </div>
+//               )}
+//             </div>
+
+//             <Link to="/conferences" className='hover:text-gray-400 text-black'>CONFÉRENCES</Link>
+//             <Link to="/blog" className='hover:text-gray-400 text-black'>BLOG</Link>
+//             <a href="#contact" className='hover:text-gray-400 text-black'>CONTACTS</a>
+
+//             <button className='bg-green-500 text-white hidden md:inline
+//               transform transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-full'>Se connecter</button>
+//           </div>
+//         </div>
+//       </div>
+//     </nav>
+//   )
+// }
+
+// export default Navbar;
+
+
+///////////
+
+// import { Link } from 'react-router-dom';
+// import { useState } from 'react';
+// import logo from "../assets/simphatLogo.png";
+
+// const Navbar = () => {
+//   // État pour gérer l'affichage du menu déroulant
+//   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+//   return (
+//     <nav className='text-white px-8 md:px-16 lg:px-24'>
+//       <div className='container py-2 flex justify-center md:justify-between items-center'>
+//         <img src={logo} alt="" width={150} height={125} className="hidden md:inline" />
+//         <div className="flex flex-col py-10 relative">
+//           <div className='space-x-6'>
+//             {/* <a href="#home" className='hover:text-gray-400 text-black'>ACCUEIL</a> */}
+//             {/* <a href="Home.jsx" className='hover:text-gray-400 text-black'>ACCUEIL</a> */}
+//             <Link to="/" className='hover:text-gray-400 text-black'>ACCUEIL</Link>
+            
+//             {/* MENU avec menu déroulant */}
+//             <div
+//               className="relative inline-block text-left"
+//               onMouseEnter={() => setIsMenuOpen(true)}
+//               onMouseLeave={() => setIsMenuOpen(false)}
+//             >
+//               {/* <a href="#" className='hover:text-gray-400 text-black cursor-pointer'>MENU</a> */}
+//               <Link to="/" className='hover:text-gray-400 text-black cursor-pointer'>MENU</Link>
+
+//               {/* Sous-menu qui s'affiche au survol */}
+//               {isMenuOpen && (
+//                 <div className="absolute mt-2 py-2 w-48 bg-white rounded-md shadow-xl z-20">
+//                   <a href="#participer" className="block px-4 py-2 text-black hover:bg-gray-100">Participer</a>
+//                   <a href="#exposition" className="block px-4 py-2 text-black hover:bg-gray-100">Exposition / Ventes</a>
+//                   <a href="#diner" className="block px-4 py-2 text-black hover:bg-gray-100">Diner de gala</a>
+//                   {/* <a href="#conferences" className="block px-4 py-2 text-black hover:bg-gray-100">CONSULTER LES THEMES DE CONFERENCES</a> */}
+//                 </div>
+//               )}
+//             </div>
+
+
+//             <Link to="/conferences" className='hover:text-gray-400 text-black'>CONFÉRENCES</Link>
+//             <Link to="/blog" className='hover:text-gray-400 text-black'>BLOG</Link>
+//             <a href="#contact" className='hover:text-gray-400 text-black'>CONTACTS</a>
+
+//             <button className='bg-green-500 text-white hidden md:inline
+//               transform transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-full'>Se connecter</button>
+//           </div>
+//         </div>
+//       </div>
+//     </nav>
+//   )
+// }
+
+// export default Navbar;
 
 
 ////////////

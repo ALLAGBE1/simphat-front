@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import salle1 from "../assets/forPages/salle1.png";
 import salle2 from "../assets/forPages/salle2.png";
 import salle3 from "../assets/forPages/salle3.png";
@@ -34,7 +35,7 @@ const projects = [
 
 const Participer = () => {
   return (
-    <div className=" text-white py-20" id="participer">
+    <div className="text-white sm:mb-0" id="participer">
       <div className="container mx-auto px-8 md:px-16 lg:px-24">
         <h2 className="text-customGreen text-4xl font-bold text-center mb-12">Participer</h2>
         <h2 className="text-black text-4xl font-bold text-center mb-12">Aux différentes conférences</h2>
@@ -55,16 +56,18 @@ const Participer = () => {
                     </div>
                 ))}
             </div>
-
-            <div className="flex justify-center">
-                <motion.span 
-                    variants={container(0.5)}
-                    initial="hidden"
-                    animate="visible"
-                    className="bg-customGreen text-white font-bold mb-20 tracking-tight py-2 px-4 rounded-lg hover:bg-green-600 cursor-pointer transition duration-300 ease-in-out lg:items-start" style={{fontSize: 18}}>
-                    CONSULTER LES THEMES DE CONFERENCES
-                </motion.span>
-            </div>
+                
+            <Link to="/conferences" className='hover:text-gray-400 text-black'>
+                <div className="flex justify-center">
+                    <motion.span 
+                        variants={container(0.5)}
+                        initial="hidden"
+                        animate="visible"
+                        className="bg-customGreen text-white font-bold mb-20 tracking-tight py-2 px-4 rounded-lg hover:bg-green-600 cursor-pointer transition duration-300 ease-in-out lg:items-start" style={{fontSize: 18}}>
+                        CONSULTER LES THEMES DE CONFERENCES
+                    </motion.span>
+                </div>
+            </Link>
         </div>
       </div>
     </div>
