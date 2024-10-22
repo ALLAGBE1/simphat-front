@@ -13,19 +13,21 @@ const container = (delay) => ({
 
 const Hero = () => {
   return (
-    <div className="container lg:mb-35">
+    // <div className="container lg:mb-35">
+    <div className="container mb-8">
         <div className="max-w-7xl mx-auto p-10">
             <div className="flex flex-col sm:flex-row items-start">
 
-                <div className="w-full md:w-1/9 p-4 mb-4 sm:mb-0">
+                <div className="w-full md:w-1/7 p-4 mb-4 sm:mb-0">
                     <div className="flex flex-col mb-2 ">
 
-                        <div className="mb-12">
+                        <div className="mb-10">
                             <motion.span 
                                 variants={container(0.5)}
                                 initial="hidden"
                                 animate="visible"
-                                className="bg-green-500 text-white text-4xl tracking-tight py-2 px-4 rounded-lg hover:bg-green-600 cursor-pointer transition duration-300 ease-in-out lg:items-start">
+                                // className="bg-customGreen text-white text-4xl tracking-tight py-2 px-4 rounded-lg hover:bg-green-600 cursor-pointer transition duration-300 ease-in-out lg:items-start">
+                                className="bg-customGreen text-white text-4xl tracking-tight py-2 px-4 rounded-lg cursor-pointer">
                                 À PROPOS DE NOUS
                             </motion.span>
                         </div>
@@ -44,10 +46,12 @@ const Hero = () => {
 
 
                 <div className="w-full md:w-1/2 p-4">
-                    <div className="flex flex-col mb-2">
-                        <img 
-                            src={presidentTalon} alt="Kevin Rush" className="w-534 h-auto md:w-32 " />
-                        <h2 className="text-center">SEM PATRICE A. G. TALON</h2>
+                    <div className="flex flex-col">
+                        <div className="mb-2">
+                            <img 
+                                src={presidentTalon} alt="Kevin Rush" className=" " />
+                        </div>
+                        <h2 className="text-center text-[20px] md:text-[28px] lg:text-[28px] text-customGreen">SEM PATRICE A. G. TALON</h2>
                     </div>
                 </div>
 

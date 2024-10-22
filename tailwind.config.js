@@ -11,7 +11,9 @@ export default {
         customGreen: '#014E13', // Ajoute ta couleur ici
         customYellow: '#FFED00',
         customWhite: '#FFFFFF',
-        customBlack: '#000000'
+        customBlack: '#000000',
+        customDarkGreen: '#014E13',
+        
       },
       keyframes: {
         blink: {
