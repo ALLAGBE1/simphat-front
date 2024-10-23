@@ -18,7 +18,7 @@ function Home() {
             <Info />
             <Hero />
 
-            <div className="">
+            <div className="" id="comiteHonneur">
                 <div className="mb-8">
                     <h1 
                         className="text-center text-4xl text-black font-bold">

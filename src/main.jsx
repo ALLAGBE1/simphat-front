@@ -10,19 +10,28 @@ import Conferences from './pages/Conferences/Conferences.jsx'
 import Contact from './components/Contact.jsx'
 import Footer from './components/Footer/index.jsx'
 import { Header } from './components/Header/Header.jsx'
+import ExpositionVentes from './components/ExpositionVentes/ExpositionVentes.jsx'
+import Gala from './components/Gala/Gala.jsx'
+import Participer from './components/Participer/participer.jsx'
+import Sponsors from './components/Sponsors/Sponsors.jsx'
+import ThemeConferances from './components/ThemeConferences/ThemeConferences.jsx'
+import ProgrammesConferences from './components/ProgrammesConferences/ProgrammesConferences.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Router>
-      {/* <Navbar /> */}
-      {/* <Headers /> */}
       <Header />
         <Routes>
           <Route path='/' element={<Home />}  />
           <Route path="/conferences" element={<Conferences />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/expositionVentes" element={<ExpositionVentes />} />
+          <Route path="/dinergala" element={<Gala />} />
+          <Route path="/participer" element={<Participer />} />
+          <Route path="/sponsors" element={<Sponsors />} />
+          <Route path="/themeConferences" element={<ThemeConferances />} />
+          <Route path="/programmesConferences" element={<ProgrammesConferences />} />
         </Routes>
-      {/* <Footer /> */}
       <Footer />
     </Router>
   </StrictMode>,

@@ -51,8 +51,8 @@ import lesTradipraticiens from "../assets/partenaires/les-tradipraticiens.png";
 
 const Partenaires = () => {
   return (
-    <div className="container mx-auto mt-10 md:p-20 ">
-      <div className="flex justify-between items-center ">
+    <div className="container mx-auto mt-10 md:p-20 gap-8">
+      <div className="flex justify-between items-center mb-5">
         <img 
           src={sonaec} alt="Sonaec" 
           className="w-1/4 sm:w-1/6 md:w-1/6" /> {/* Ajustement des tailles */}
@@ -71,7 +71,7 @@ const Partenaires = () => {
         
       </div>
 
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center mb-5">
         <img 
           src={loloAndoche} alt="Lolo Andoche" 
           className="w-1/4 sm:w-1/6 md:w-1/6" />
@@ -90,7 +90,7 @@ const Partenaires = () => {
         
       </div>
 
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center mb-5">
         <img 
           src={chaftel} alt="Lolo Andoche" 
           className="w-1/4 sm:w-1/6 md:w-1/6" />
@@ -109,7 +109,7 @@ const Partenaires = () => {
         
       </div>
 
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center mb-5">
         <img 
           src={mensah} alt="Lolo Andoche" 
           className="w-1/4 sm:w-1/6 md:w-1/6" />
@@ -128,7 +128,7 @@ const Partenaires = () => {
         
       </div>
 
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center mb-5">
         <img 
           src={erevan} alt="Lolo Andoche" 
           className="w-1/4 sm:w-1/6 md:w-1/6" />
@@ -147,7 +147,7 @@ const Partenaires = () => {
         
       </div>
 
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center mb-5">
         <img 
           src={batimat} alt="Lolo Andoche" 
           className="w-1/4 sm:w-1/6 md:w-1/6" />
@@ -166,7 +166,7 @@ const Partenaires = () => {
         
       </div>
 
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center mb-5">
         <img 
           src={aoa} alt="Lolo Andoche" 
           className="w-1/4 sm:w-1/6 md:w-1/6" />
@@ -185,7 +185,7 @@ const Partenaires = () => {
         
       </div>
 
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center mb-5">
         <img 
           src={sunu} alt="Lolo Andoche" 
           className="w-1/4 sm:w-1/6 md:w-1/6" />
@@ -204,7 +204,7 @@ const Partenaires = () => {
         
       </div>
 
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center mb-5">
         <img 
           src={ms} alt="Lolo Andoche" 
           className="w-1/4 sm:w-1/6 md:w-1/6" />
