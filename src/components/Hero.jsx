@@ -1,15 +1,7 @@
 import presidentTalon from "../assets/forPages/presidentTalon.png"
-import { motion } from "framer-motion"
+import { Link } from 'react-router-dom';
 
 
-const container = (delay) => ({
-    hidden: {x: -100, opacity: 0},
-    visible: {
-        x: 0,
-        opacity: 1,
-        transition: {duration: 0.5, delay: delay}
-    }
-})
 
 const Hero = () => {
   return (
@@ -22,14 +14,14 @@ const Hero = () => {
                     <div className="flex flex-col mb-2 ">
 
                         <div className="mb-10">
-                            <motion.span 
-                                variants={container(0.5)}
-                                initial="hidden"
-                                animate="visible"
+                        <Link to="/contact" >
+                            <span 
+                                
                                 // className="bg-customGreen text-white text-4xl tracking-tight py-2 px-4 rounded-lg hover:bg-green-600 cursor-pointer transition duration-300 ease-in-out lg:items-start">
                                 className="bg-customGreen text-white text-4xl tracking-tight py-2 px-4 rounded-lg cursor-pointer">
                                 À PROPOS DE NOUS
-                            </motion.span>
+                            </span>
+                        </Link>
                         </div>
 
                         {/* <p className="text-customBlack font-bold  max-w-xl py-6 tracking-tighter text-2xl sm:text-3xl md:text-3xl lg:text-3xl"> */}

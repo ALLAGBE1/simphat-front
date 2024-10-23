@@ -1,5 +1,7 @@
 import { Heading } from "../Heading";
 import { Img } from "../Img";
+import { Link } from 'react-router-dom';
+
 
 
 
@@ -13,25 +15,25 @@ export default function Footer() {
             </Heading>
             <ul className="flex flex-col items-start gap-2">
                 <li>
-                    <a href="#" className="lg:text-[13px]">
+                    <Link to="/expositionVentes" className="lg:text-[13px]">
                     <Heading as="p" className="text-[16px] font-medium uppercase text-[#ffffff]">
                         Exposition / Ventes
                     </Heading>
-                    </a>
+                    </Link>
                 </li>
                 <li>
-                    <a href="Conférences" target="_blank" rel="noreferrer" className="lg:text-[13px]">
+                    <Link to="/participer"  rel="noreferrer" className="lg:text-[13px]">
                     <Heading as="p" className="text-[16px] font-medium uppercase text-[#ffffff]">
                         Conférences
                     </Heading>
-                    </a>
+                    </Link>
                 </li>
                 <li>
-                    <a href="#" className="lg:text-[13px]">
+                    <Link to="/dinergala" className="lg:text-[13px]">
                     <Heading as="p" className="text-[16px] font-medium uppercase text-[#ffffff]">
                         Dîner de Gala
                     </Heading>
-                    </a>
+                    </Link>
                 </li>
             </ul>
         </div>
@@ -41,18 +43,18 @@ export default function Footer() {
             </Heading>
             <ul className="flex flex-col items-start gap-2">
                 <li>
-                    <a href="#" className="lg:text-[13px]">
+                    {/* <Link to="/#" className="lg:text-[13px]"> */}
                     <Heading as="p" className="text-[16px] font-medium uppercase text-[#ffffff]">
                         BOUTIQUE “SANTÉ PAR LES PLANTES”
                     </Heading>
-                    </a>
+                    {/* </Link> */}
                 </li>
                 <li>
-                    <a href="Conférences" target="_blank" rel="noreferrer" className="lg:text-[13px]">
+                    <Link to="/sponsors" rel="noreferrer" className="lg:text-[13px]">
                     <Heading as="p" className="text-[16px] font-medium uppercase text-[#ffffff]">
                         Sponsors
                     </Heading>
-                    </a>
+                    </Link>
                 </li>
             </ul>
         </div>
@@ -62,18 +64,18 @@ export default function Footer() {
             </Heading>
             <ul className="flex flex-col items-start gap-2">
                 <li>
-                    <a href="#" className="lg:text-[13px]">
+                    {/* <Link to="/#" className="lg:text-[13px]"> */}
                     <Heading as="p" className="text-[16px] font-medium uppercase text-[#ffffff]">
                         Vision, Mission & valeurs
                     </Heading>
-                    </a>
+                    {/* </Link> */}
                 </li>
                 <li>
-                    <a href="Conférences" target="_blank" rel="noreferrer" className="lg:text-[13px]">
+                    {/* <Link to="/#/comiteHonneur" rel="noreferrer" className="lg:text-[13px]"> */}
                     <Heading as="p" className="text-[16px] font-medium uppercase text-[#ffffff]">
                         Comité d’honneur
                     </Heading>
-                    </a>
+                    {/* </Link> */}
                 </li>
             </ul>
         </div>
@@ -83,18 +85,18 @@ export default function Footer() {
             </Heading>
             <ul className="flex flex-col items-start gap-2">
                 <li>
-                    <a href="#" className="lg:text-[13px]">
+                    <Link to="/contact" className="lg:text-[13px]">
                     <Heading as="p" className="text-[16px] font-medium uppercase text-[#ffffff]">
                         Nos coordonnées
                     </Heading>
-                    </a>
+                    </Link>
                 </li>
                 <li>
-                    <a href="Conférences" target="_blank" rel="noreferrer" className="lg:text-[13px]">
+                    {/* <Link to="/#" target="_blank" rel="noreferrer" className="lg:text-[13px]"> */}
                     <Heading as="p" className="text-[16px] font-medium uppercase text-[#ffffff]">
                         Université d’Abomey-Calavi
                     </Heading>
-                    </a>
+                    {/* </Link> */}
                 </li>
                 
             </ul>

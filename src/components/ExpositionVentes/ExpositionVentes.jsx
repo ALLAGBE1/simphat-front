@@ -42,7 +42,7 @@ const ExpositionVentes = () => {
                 <img src={iconWhatsapp} alt="" className="" />
                 <img src={iconTelephone} alt="" className="" />
                 <p className="text-customGreen font-bold flex items-center text-3xl" >
-                    <span className="mr-2 " style={{fontSize: 16}} >+229 </span> 47 47 47 32 / 67 78 78 06
+                    <span className="mr-2 " style={{fontSize: 16}} >+229 </span> 98 82 63 63 / 47 47 47 39
                 </p>
             </div>
 
