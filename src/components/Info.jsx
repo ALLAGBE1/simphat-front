@@ -8,7 +8,7 @@ const Info = () => {
     // Fonction pour calculer les jours restants
     const calculateDaysLeft = () => {
       const today = new Date(); // Date actuelle
-      const eventDate = new Date("2024-11-25T00:00:00"); // Date cible (25 novembre 2024 à minuit)
+      const eventDate = new Date("2024-11-27T00:00:00"); // Date cible (25 novembre 2024 à minuit)
 
       // Calculer la différence en millisecondes
       const timeDifference = eventDate - today;
@@ -40,7 +40,7 @@ const Info = () => {
     <div className="container mx-auto p-4 mb-3">
       <div className="flex flex-col md:flex-row">
         <div className="w-full md:w-1/2">
-          <p className="text-[48px] font-bold text-center text-red-500 animate-blink">
+          <p className="text-[48px] font-bold text-center text-customGreen animate-blink">
             {daysLeft > 0 ? `JOUR J - ${daysLeft}` : "JOUR J"}
           </p>
         </div>
