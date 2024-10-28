@@ -37,10 +37,10 @@ const Info = () => {
   }, []);
 
   return (
-    <div className="container mx-auto p-4 mb-3">
+    <div className="container mx-auto p-4">
       <div className="flex flex-col md:flex-row">
         <div className="w-full md:w-1/2">
-          <p className="text-[48px] font-bold text-center text-customGreen animate-blink">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold text-center text-customGreen animate-blink">
             {daysLeft > 0 ? `JOUR J - ${daysLeft}` : "JOUR J"}
           </p>
         </div>

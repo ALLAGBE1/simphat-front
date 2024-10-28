@@ -3,12 +3,9 @@ import Info from "../../components/Info"
 import Hounkpatin from "../../assets/forPages/benjaminHounkpatin.png"
 import Justin from "../../assets/forPages/Justin.png"
 import Bio from "../../assets/forPages/Bio.png"
-// import RenderCommittee from "../../components/RenderCommittee"
 import '../../App.css';
 import Partenaires from "../../components/Partenaires"
-// import ExpositionTicket from "../../components/ExpositionTicket"
-// import Participer from "../../components/Participer"
-// import Gala from "../../components/Gala"
+
 
 
 
@@ -51,10 +48,7 @@ function Home() {
 
 
                 <div className="flex flex-col-reverse md:flex-row ">
-                    {/* <div className="w-full md:w-2/3 font-bold flex md:items-center md:justify-center bg-red-600 "> */}
                     <div className="w-full md:w-2/3 font-bold flex md:items-center md:justify-center  ">
-                        {/* <div className="flex flex-col max-w-[600px] md:ml-20 md:mb-20 bg-red-200"> */}
-                        {/* <div className="flex flex-col bg-red-200 "> */}
                         <div className="flex flex-col ">
                             <div className="">
                                 <h2 className="text-customGreen">SEM BENJAMIN HOUNKPATIN</h2>
@@ -67,7 +61,6 @@ function Home() {
 
                         </div>
                     </div>
-                    {/* <div className="w-full md:w-1/2 bg-customYellow flex "> */}
                     <div className="w-full md:w-1/2 flex ">
                         <img src={Hounkpatin} alt="" className="" />
                     </div>
