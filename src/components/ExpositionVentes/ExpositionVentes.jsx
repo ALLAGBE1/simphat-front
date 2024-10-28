@@ -2,18 +2,20 @@
 import iconLocalisation from "../../assets/iconLocalisation.svg"
 import iconWhatsapp from "../../assets/iconWhatsapp.svg"
 import iconTelephone from "../../assets/iconTelephone.svg"
-import ticketExposition from "../../assets/ticketExposition.png"
 
 const ExpositionVentes = () => {
   return (
     <div className="container mx-auto py-20">
-        <div className="flex flex-col ">
-            <h2 className="text-customGreen text-center text-4xl font-bold mb-12 underline">Exposition / Ventes</h2>
+        <div className="flex flex-col">
+            <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl
+                text-customGreen text-center font-bold mb-8 underline">Exposition-Ventes</h2>
 
-            <h2 className="text-customBlack text-center text-4xl md:text-5xl lg:text-6xl font-bold mb-12">
+            <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl
+                text-customBlack text-center font-bold mb-8">
                 DU 27 AU 30 NOVEMBRE
             </h2>
-            <div className="flex flex-row justify-center">
+
+            <div className="flex flex-row justify-center mb-5">
                 <div className="">
                     <img src={iconLocalisation} alt="" className="" />
                 </div>
@@ -22,15 +24,16 @@ const ExpositionVentes = () => {
                 </div>
             </div>
 
-            <div className="flex justify-center mb-8">
-                <img
-                    src={ticketExposition}
-                    alt=""
-                    className="rounded object-cover mb-8 md:mb-0 "
-                />
+            <div className="flex flex-col items-center md-5">
+                <div className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold ">
+                    <h2 className="">ENTRÉE GALA: 10.000F</h2>
+                    <h2 className="">TICKET TOMBOLA: 1.000F, 2.000F</h2>
+                    <h2 className="">TICKET STAND: 20.000F</h2>
+                    <h2 className="">INSCRIPTION POUR LE CONCOURS: 15.000F</h2>
+                </div>
             </div>
 
-            <div className="flex justify-center mb-8">
+            <div className="flex justify-center mb-5">
                 <h3 
                     className="bg-customGreen text-customYellow text-center text-3xl tracking-tight py-2 px-4 cursor-pointer">
                     COMMANDEZ VOS TICKETS
