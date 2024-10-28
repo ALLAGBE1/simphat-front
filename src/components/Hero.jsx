@@ -9,8 +9,9 @@ const Hero = () => {
 
   return (
     <div className="container mx-auto p-10">
-      <div className="flex flex-col-reverse sm:flex-row text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">
-        <div className="w-full sm:w-1/2 ">
+      <div className="flex flex-col sm:flex-row text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">
+        {/* Cacher l'image sur mobile en utilisant hidden sm:block */}
+        <div className="w-full sm:w-1/2 hidden sm:flex">
           <div className="flex flex-col items-center">
             <img 
               src={DrJustin} 
