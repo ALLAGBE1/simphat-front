@@ -74,7 +74,7 @@ export const Header = () => {
         <div className="flex flex-col items-start p-4 space-y-4">
             <Link to="/" className="hover:text-gray-400 text-black text-lg font-bold">ACCUEIL</Link>
             <a href="#comiteHonneur" className="block px-4 py-2 text-black hover:bg-gray-100">COMITÉ D’HONNEUR</a>
-            <Link to="/expositionVentes" className="hover:text-gray-400 text-black text-lg font-bold">Exposition / Ventes</Link>
+            <Link to="/expositionVentes" className="hover:text-gray-400 text-black text-lg font-bold">Exposition-Ventes</Link>
             <Link to="/participer" className="hover:text-gray-400 text-black text-lg font-bold">PARTICIPER</Link>
             <Link to="/dinergala" className="hover:text-gray-400 text-black text-lg font-bold">DÎNER DE GALA</Link>
             <Link to="/sponsors" className="hover:text-gray-400 text-black text-lg font-bold">SPONSORS</Link>
