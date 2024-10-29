@@ -82,6 +82,15 @@ export const Header = () => {
             <Link to="/programmesConferences" className="hover:text-gray-400 text-black text-lg font-bold">Programme des Conférences</Link>
             <Link to="/contact" className="hover:text-gray-400 text-black text-lg font-bold">NOS COORDONNÉES</Link>
 
+            {/* <Link to="/contact" className="hover:text-gray-400 text-black text-lg font-bold">S&apos;INSCRIRE</Link>
+            <Link to="/contact" className="hover:text-gray-400 text-black text-lg font-bold">SE CONNECTER</Link> */}
+
+          <div className="mt-auto space-y-4">
+                  {/* <Link to="/signUp" className="hover:text-gray-400 text-black text-lg font-bold">S&apos;INSCRIRE</Link>
+                  <Link to="/login" className="hover:text-gray-400 text-black text-lg font-bold">SE CONNECTER</Link> */}
+                  <Link to="/auth" className="hover:text-gray-400 text-black text-lg font-bold">SE CONNECTER</Link>
+          </div>
+
         </div>
       </div>
 
