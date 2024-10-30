@@ -37,7 +37,7 @@ const Hero = () => {
 
 
         <div className="flex flex-col-reverse sm:flex-row text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">
-            <div className="w-full sm:w-1/2">
+            <div className="w-full sm:w-1/3">
                 <div className="flex flex-col items-center">
                     <img 
                         src={DrJustin} 
@@ -49,7 +49,7 @@ const Hero = () => {
 
                 </div>
             </div>
-            <div className="w-full sm:w-4/5 p-8">
+            <div className="w-full sm:w-4/5 bg-customLightGray p-8" style={{ borderRadius: '26px' }}>
                 <p className="mb-3">
                     Le Gouvernement béninois a fait une place de choix à la Médecine traditionnelle dans la loi portant la protection de la santé des personnes, et  donc une ambition clairement affichée de son chef  de faire de ce secteur un des piliers du dispositif sanitaire du pays. Dans ce même élan, et pour soutenir la vision du Chef de  l’Etat, le Salon International de la Médecine et de la Pharmacopée Traditionnelles (SIMPHAT) a pour objectif de réunir les acteurs du secteur afin de promouvoir et valoriser ce secteur jusqu’alors informel mais auquel 80% de la population fait recours. Ce salon se déroulera suivant trois (03) volets : 
                 </p>

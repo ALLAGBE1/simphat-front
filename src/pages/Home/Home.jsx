@@ -1,10 +1,10 @@
 import Hero from "../../components/Hero"
 // import Info from "../../components/Info"
-import Hounkpatin from "../../assets/forPages/benjaminHounkpatin.png"
-import Bio from "../../assets/forPages/Bio.png"
+// import Hounkpatin from "../../assets/forPages/benjaminHounkpatin.png"
+// import Bio from "../../assets/forPages/Bio.png"
 import '../../App.css';
-import Partenaires from "../../components/Partenaires"
-import DrJustin from "../../assets/forPages/DrJustin.png";
+// import Partenaires from "../../components/Partenaires"
+// import DrJustin from "../../assets/forPages/DrJustin.png";
 
 
 
@@ -16,7 +16,7 @@ function Home() {
             {/* <Info /> */}
             <Hero />
 
-            <div className="" id="comiteHonneur">
+            {/* <div className="" id="comiteHonneur">
                 <div className="mb-10">
                     <h1 
                         className="text-center text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-black font-bold">
@@ -107,9 +107,9 @@ function Home() {
                 </div>
 
 
-            </div>
+            </div> */}
 
-            <Partenaires />
+            {/* <Partenaires /> */}
         </div>
     )
 }
