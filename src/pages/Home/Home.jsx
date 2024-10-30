@@ -1,5 +1,5 @@
 import Hero from "../../components/Hero"
-import Info from "../../components/Info"
+// import Info from "../../components/Info"
 import Hounkpatin from "../../assets/forPages/benjaminHounkpatin.png"
 import Bio from "../../assets/forPages/Bio.png"
 import '../../App.css';
@@ -13,7 +13,7 @@ import DrJustin from "../../assets/forPages/DrJustin.png";
 function Home() {
     return (
         <div className="container mx-auto">
-            <Info />
+            {/* <Info /> */}
             <Hero />
 
             <div className="" id="comiteHonneur">

@@ -1,71 +1,156 @@
-import { useState } from "react";
-import DrJustin from "../assets/forPages/DrJustin.png";
+
+import DrJustin from "../assets/forPages/DrJustin.png"
+import Info from "./Info"
+import bgImage from "../assets/forPages/vegetables.png"
 
 const Hero = () => {
-  const [showFullText, setShowFullText] = useState(false);
-
-  const fullText = `Le Gouvernement béninois reconnaît désormais la Médecine traditionnelle comme un pilier de son système de santé. Pour soutenir cette vision, le Salon International de la Médecine et de la Pharmacopée Traditionnelles (SIMPHAT) vise à rassembler les acteurs du secteur pour valoriser cette pratique, utilisée par 80 % de la population.`;
-  const shortText = `Le Gouvernement béninois reconnaît désormais la Médecine traditionnelle comme un pilier de son système de santé. Pour soutenir cette vision, le Salon International de la Médecine et de la Pharmacopée Traditionnelles (SIMPHAT)`;
-
   return (
-    <div className="container mx-auto p-10">
-      <div className="flex flex-col sm:flex-row text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">
-        {/* Cacher l'image sur mobile en utilisant hidden sm:block */}
-        <div className="w-full sm:w-1/2 hidden sm:flex">
-          <div className="flex flex-col items-center">
-            <img 
-              src={DrJustin} 
-              alt="Dr Justin" 
-              className="max-w-full h-auto mx-auto sm:w-32 sm:h-32 md:w-48 md:h-48 lg:w-64 lg:h-64 xl:w-80 xl:h-80" 
-            />
-            <h2 className="text-customGreen text-center">Dr Justin NOUDEDJI</h2>
-            <h3 className="text-customBlack text-center">Initiateur et Coordonnateur Général du SIMPHAT</h3>
-          </div>
+    <div className="container mx-auto p-10" style={{ 
+        backgroundImage: `url(${bgImage})` ,
+        backgroundSize: 'cover',
+    }}>
+        <Info />
+        <div className="flex flex-col sm:flex-row text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">
+            <div className="w-full sm:w-1/2 ">
+                
+            </div>
+            <div className="w-full sm:w-4/5 flex justify-center">
+                <div              
+                    className="
+                    inline-block
+                    text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 
+                    bg-customGreen text-white tracking-tight 
+                    py-2 px-4 rounded-lg mb-2
+                    max-w-lg
+                    "
+                >
+                    OBJECTIFS DU SIMPHAT
+                </div>
+            </div>
+
+            <div className="w-full sm:w-1/5 hidden sm:flex ">
+                <div className="flex flex-col items-center">
+                    
+                </div>
+            </div> 
         </div>
 
-        <div className="w-full sm:w-4/5 p-8">
-          <div              
-            className="
-              inline-block
-              text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 
-              bg-customGreen text-white tracking-tight 
-              py-2 px-4 rounded-lg mb-2
-              max-w-lg
-            "
-          >
-            OBJECTIFS DU SIMPHAT
-          </div>
 
-          {/* Texte tronqué avec bouton "Afficher plus" pour les petits écrans */}
-          <div className="sm:hidden">
-            <p className="mb-3">
-              {showFullText ? fullText : shortText}
-            </p>
-            <button 
-              onClick={() => setShowFullText(!showFullText)}
-              className="text-blue-500 hover:text-blue-700 font-semibold focus:outline-none"
-            >
-              {showFullText ? "Afficher moins" : "Afficher plus"}
-            </button>
-          </div>
+        <div className="flex flex-col-reverse sm:flex-row text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">
+            <div className="w-full sm:w-1/2">
+                <div className="flex flex-col items-center">
+                    <img 
+                        src={DrJustin} 
+                        alt="Dr Justin" 
+                        className="max-w-full h-auto mx-auto sm:w-32 sm:h-32 md:w-48 md:h-48 lg:w-64 lg:h-64 xl:w-80 xl:h-80" 
+                        />
+                    <h2 className="text-customGreen text-center">Dr Justin NOUDEDJI</h2>
+                    <h3 className="text-customBlack text-center">Initiateur et Coordonnateur Général du SIMPHAT</h3>
 
-          {/* Texte complet pour les écrans sm et plus grands */}
-          <p className="hidden sm:block mb-3">
-            {fullText}
-          </p>
+                </div>
+            </div>
+            <div className="w-full sm:w-4/5 p-8">
+                <p className="mb-3">
+                    Le Gouvernement béninois a fait une place de choix à la Médecine traditionnelle dans la loi portant la protection de la santé des personnes, et  donc une ambition clairement affichée de son chef  de faire de ce secteur un des piliers du dispositif sanitaire du pays. Dans ce même élan, et pour soutenir la vision du Chef de  l’Etat, le Salon International de la Médecine et de la Pharmacopée Traditionnelles (SIMPHAT) a pour objectif de réunir les acteurs du secteur afin de promouvoir et valoriser ce secteur jusqu’alors informel mais auquel 80% de la population fait recours. Ce salon se déroulera suivant trois (03) volets : 
+                </p>
+                <p className="font-bold">
+                    Expositions-Ventes:  27 au 30 Novembre <br />
+                    Conférences-Débats: 27 au 29 Novembre <br />
+                    Diner de Gala: 30 Novembre
+                </p>
+            </div>
 
-          <p className="font-bold mt-4">
-            Expositions-Ventes:  27 au 30 Novembre <br />
-            Conférences-Débats: 27 au 29 Novembre <br />
-            Diner de Gala: 30 Novembre
-          </p>
+            <div className="w-full sm:w-1/5 hidden sm:flex ">
+                <div className="flex flex-col items-center">
+                    
+                </div>
+            </div> 
         </div>
-      </div>
     </div>
-  );
-};
+  )
+}
 
-export default Hero;
+export default Hero
+
+
+
+
+
+
+// import { useState } from "react";
+// import DrJustin from "../assets/forPages/DrJustin.png";
+// import bgImage from "../assets/forPages/backgroundImage.png"
+
+
+// const Hero = () => {
+//   const [showFullText, setShowFullText] = useState(false);
+
+//   const fullText = `Le Gouvernement béninois reconnaît désormais la Médecine traditionnelle comme un pilier de son système de santé. Pour soutenir cette vision, le Salon International de la Médecine et de la Pharmacopée Traditionnelles (SIMPHAT) vise à rassembler les acteurs du secteur pour valoriser cette pratique, utilisée par 80 % de la population.`;
+//   const shortText = `Le Gouvernement béninois reconnaît désormais la Médecine traditionnelle comme un pilier de son système de santé. Pour soutenir cette vision, le Salon International de la Médecine et de la Pharmacopée Traditionnelles (SIMPHAT)`;
+
+//   return (
+//     <div className="container mx-auto p-10" style={{ 
+//         backgroundImage: `url(${bgImage})` ,
+//         backgroundSize: 'cover',
+//         // backgroundBlendMode: 'darken',
+//     }}>
+//       <div className="flex flex-col sm:flex-row text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">
+//         {/* Cacher l'image sur mobile en utilisant hidden sm:block */}
+//         <div className="w-full sm:w-1/2 hidden sm:flex">
+//           <div className="flex flex-col items-center">
+//             <img 
+//               src={DrJustin} 
+//               alt="Dr Justin" 
+//               className="max-w-full h-auto mx-auto sm:w-32 sm:h-32 md:w-48 md:h-48 lg:w-64 lg:h-64 xl:w-80 xl:h-80" 
+//             />
+//             <h2 className="text-customGreen text-center">Dr Justin NOUDEDJI</h2>
+//             <h3 className="text-customBlack text-center">Initiateur et Coordonnateur Général du SIMPHAT</h3>
+//           </div>
+//         </div>
+
+//         <div className="w-full sm:w-4/5 p-8">
+//           <div              
+//             className="
+//               inline-block
+//               text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 
+//               bg-customGreen text-white tracking-tight 
+//               py-2 px-4 rounded-lg mb-2
+//               max-w-lg
+//             "
+//           >
+//             OBJECTIFS DU SIMPHAT
+//           </div>
+
+//           {/* Texte tronqué avec bouton "Afficher plus" pour les petits écrans */}
+//           <div className="sm:hidden">
+//             <p className="mb-3">
+//               {showFullText ? fullText : shortText}
+//             </p>
+//             <button 
+//               onClick={() => setShowFullText(!showFullText)}
+//               className="text-blue-500 hover:text-blue-700 font-semibold focus:outline-none"
+//             >
+//               {showFullText ? "Afficher moins" : "Afficher plus"}
+//             </button>
+//           </div>
+
+//           {/* Texte complet pour les écrans sm et plus grands */}
+//           <p className="hidden sm:block mb-3">
+//             {fullText}
+//           </p>
+
+//           <p className="font-bold mt-4">
+//             Expositions-Ventes:  27 au 30 Novembre <br />
+//             Conférences-Débats: 27 au 29 Novembre <br />
+//             Diner de Gala: 30 Novembre
+//           </p>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Hero;
 
 
 
@@ -236,4 +321,6 @@ export default Hero;
 // }
 
 // export default Hero
+
+
 
