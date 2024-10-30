@@ -110,13 +110,36 @@ const ExpositionVentes = () => {
             </div>
           </div>
 
-          <div className="flex justify-center items-center mt-8">
+          {/* <div className="flex justify-center items-center mt-8">
             <button
               onClick={openModal}
               className="bg-customGreen text-customYellow text-center text-3xl tracking-tight py-2 px-4 cursor-pointer"
             >
               COMMANDEZ VOS TICKETS
             </button>
+          </div> */}
+ 
+          <div className="flex flex-col sm:flex-row text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl mt-8">
+            
+            <div className="w-full flex justify-center">
+                <div              
+                    className="
+                    inline-block
+                    text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 
+                    bg-customGreen text-white tracking-tight 
+                    py-2 px-4 mb-2
+                    max-w-lg
+                    "
+                >
+                    <button
+                        onClick={openModal}
+                        className="bg-customGreen text-customYellow  tracking-tight cursor-pointer"
+                        >
+                        COMMANDEZ VOS TICKETS
+                    </button>
+                </div>
+            </div>
+
           </div>
 
           <div className="flex flex-row gap-2 items-center justify-center mt-8">
@@ -125,7 +148,7 @@ const ExpositionVentes = () => {
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-customGreen font-bold flex items-center">
               <span className="mr-2">+229 </span> 98 82 63 63 / 47 47 47 39
             </p>
-          </div>z
+          </div>
 
         <Link to="/criteres">
             <div className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-customGreen font-bold text-center underline">
