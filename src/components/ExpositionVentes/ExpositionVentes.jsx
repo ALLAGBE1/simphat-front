@@ -2,6 +2,7 @@ import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMapMarkerAlt, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import bgImage from "../../assets/forPages/exposerVente.png"
 
 const ExpositionVentes = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -79,7 +80,10 @@ const ExpositionVentes = () => {
   };
 
   return (
-    <div className="container mx-auto py-20">
+    <div className="container mx-auto py-20" style={{ 
+        backgroundImage: `url(${bgImage})` ,
+        backgroundSize: 'cover',
+    }}>
       <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-customGreen text-center font-bold mb-8 underline">
         Exposition-Ventes
       </h2>
