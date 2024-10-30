@@ -16,6 +16,7 @@ import Auth from './components/auth/Auth.jsx'
 import Admin from './components/Admin/Admin.jsx' // Assure-toi que le chemin est correct pour le composant Admin
 import './index.css'
 import HonoraryCommittee from './components/HonoraryCommittee/HonoraryCommittee.jsx'
+import Criteres from './components/Criteres/Criteres.jsx'
 
 function App() {
   const location = useLocation();
@@ -36,6 +37,7 @@ function App() {
         <Route path="/sponsors" element={<Sponsors />} />
         <Route path="/themeConferences" element={<ThemeConferances />} />
         <Route path="/programmesConferences" element={<ProgrammesConferences />} />
+        <Route path="/criteres" element={<Criteres /> } />
         <Route path="/auth" element={<Auth />} />
         <Route path="/honoraryCommittee" element={<HonoraryCommittee />} />
         <Route path="/admin" element={<Admin />} /> {/* Route pour l'admin */}

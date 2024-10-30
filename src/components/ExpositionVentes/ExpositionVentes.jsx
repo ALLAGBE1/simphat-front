@@ -3,6 +3,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMapMarkerAlt, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import bgImage from "../../assets/forPages/exposerVente.png"
+import { Link,  } from 'react-router-dom';
+
 
 const ExpositionVentes = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -85,11 +87,11 @@ const ExpositionVentes = () => {
         backgroundSize: 'cover',
     }}>
       <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-customGreen text-center font-bold mb-8 underline">
-        Exposition-Ventes
+        Exposition-Ventes-CONCOURS PRIX DU MEILLEUR PRODUIT CONCOURS
       </h2>
-      <div className="flex flex-col sm:flex-row">
-        <div className="w-full sm:w-1/2 p-4">
-          <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-customBlack font-bold text-center">
+      {/* <div className="flex flex-col sm:flex-row"> */}
+      <div className="flex flex-col ">
+        <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-customBlack font-bold text-center">
             DU 27 AU 30 NOVEMBRE
           </h2>
           <div className="flex flex-row gap-2 items-center justify-center mt-2">
@@ -98,24 +100,17 @@ const ExpositionVentes = () => {
               CHANT D’OISEAU, COTONOU, BÉNIN
             </h3>
           </div>
-          <div className="flex flex-row gap-2 items-center justify-center mt-4">
-            <FontAwesomeIcon icon={faWhatsapp} color="#25D366" size="2x" />
-            <FontAwesomeIcon icon={faPhone} color="black" size="2x" />
-            <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-customGreen font-bold flex items-center">
-              <span className="mr-2">+229 </span> 98 82 63 63 / 47 47 47 39
-            </p>
-          </div>
-        </div>
-        <div className="w-full sm:w-1/2 p-4 items-start">
-          <div className="flex flex-col">
+
+          <div className="flex justify-center items-center mt-8">
             <div className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold ">
-              <h2>ENTRÉE GALA: 10.000F</h2>
-              <h2>TICKET TOMBOLA: 1.000F, 2.000F</h2>
-              <h2>TICKET STAND: 20.000F</h2>
-              <h2>INSCRIPTION POUR LE CONCOURS: 15.000F</h2>
+                <h2>ENTRÉE GALA: 10.000F</h2>
+                <h2>TICKET TOMBOLA: 1.000F, 2.000F</h2>
+                <h2>TICKET STAND: 20.000F</h2>
+                <h2>INSCRIPTION POUR LE CONCOURS: 15.000F</h2>
             </div>
           </div>
-          <div className="flex mt-4">
+
+          <div className="flex justify-center items-center mt-8">
             <button
               onClick={openModal}
               className="bg-customGreen text-customYellow text-center text-3xl tracking-tight py-2 px-4 cursor-pointer"
@@ -123,7 +118,22 @@ const ExpositionVentes = () => {
               COMMANDEZ VOS TICKETS
             </button>
           </div>
-        </div>
+
+          <div className="flex flex-row gap-2 items-center justify-center mt-8">
+            <FontAwesomeIcon icon={faWhatsapp} color="#25D366" size="2x" />
+            <FontAwesomeIcon icon={faPhone} color="black" size="2x" />
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-customGreen font-bold flex items-center">
+              <span className="mr-2">+229 </span> 98 82 63 63 / 47 47 47 39
+            </p>
+          </div>z
+
+        <Link to="/criteres">
+            <div className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-customGreen font-bold text-center">
+                <h3 className="">Voir les critères de sélection du meilleur produit</h3>
+            </div>
+        </Link>
+          
+
       </div>
       {isModalOpen && (
         <div
@@ -175,6 +185,190 @@ const ExpositionVentes = () => {
 };
 
 export default ExpositionVentes;
+
+
+
+
+////////////////
+
+
+// import { useState } from "react";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faMapMarkerAlt, faPhone } from "@fortawesome/free-solid-svg-icons";
+// import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+// import bgImage from "../../assets/forPages/exposerVente.png"
+
+// const ExpositionVentes = () => {
+//   const [isModalOpen, setIsModalOpen] = useState(false);
+//   const [activities, setActivities] = useState([]);
+//   const [selectedActivity, setSelectedActivity] = useState(null);
+//   const [selectedAmount, setSelectedAmount] = useState(null);
+//   const [isRegistering, setIsRegistering] = useState(false);
+
+//   const openModal = () => {
+//     setIsModalOpen(true);
+//     fetchActivities();
+//   };
+
+//   const closeModal = () => {
+//     setIsModalOpen(false);
+//     setSelectedActivity(null);
+//     setSelectedAmount(null);
+//   };
+
+//   const fetchActivities = async () => {
+//     try {
+//       const response = await fetch("http://localhost:3000/activitySimphat/");
+//       const data = await response.json();
+//       setActivities(data);
+//     } catch (error) {
+//       console.error("Erreur lors de la récupération des activités :", error);
+//     }
+//   };
+
+//   const handleActivityChange = (event) => {
+//     const activityId = event.target.value;
+//     const activity = activities.find((act) => act._id === activityId);
+//     setSelectedActivity(activityId);
+//     setSelectedAmount(activity ? activity.amount : null);
+//   };
+
+//   const handleRegister = async () => {
+//     const user = localStorage.getItem("token");
+//     if (!user) {
+//       alert("Utilisateur non connecté");
+//       return;
+//     }
+
+//     const registrationData = {
+//       name: localStorage.getItem("userName"),
+//       email: localStorage.getItem("userEmail"),
+//       number: localStorage.getItem("userNumber"),
+//       activitySimphat: selectedActivity,
+//     };
+
+//     try {
+//       setIsRegistering(true);
+//       const response = await fetch("http://localhost:3000/registerActivity/", {
+//         method: "POST",
+//         headers: {
+//           "Content-Type": "application/json",
+//           Authorization: `Bearer ${localStorage.getItem("token")}`,
+//         },
+//         body: JSON.stringify(registrationData),
+//       });
+
+//       const result = await response.json();
+
+//       if (response.ok) {
+//         alert("Inscription réussie !");
+//       } else {
+//         alert(`Erreur lors de l'inscription: ${result.message}`);
+//       }
+//     } catch (error) {
+//       console.error("Erreur lors de l'inscription :", error);
+//       alert("Une erreur s'est produite, veuillez réessayer.");
+//     } finally {
+//       setIsRegistering(false);
+//     }
+//   };
+
+//   return (
+//     <div className="container mx-auto py-20" style={{ 
+//         backgroundImage: `url(${bgImage})` ,
+//         backgroundSize: 'cover',
+//     }}>
+//       <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-customGreen text-center font-bold mb-8 underline">
+//         Exposition-Ventes-CONCOURS PRIX DU MEILLEUR PRODUIT CONCOURS
+//       </h2>
+//       <div className="flex flex-col sm:flex-row">
+//         <div className="w-full sm:w-1/2 p-4">
+//           <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-customBlack font-bold text-center">
+//             DU 27 AU 30 NOVEMBRE
+//           </h2>
+//           <div className="flex flex-row gap-2 items-center justify-center mt-2">
+//             <FontAwesomeIcon icon={faMapMarkerAlt} color="black" size="2x" />
+//             <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-customBlack font-bold">
+//               CHANT D’OISEAU, COTONOU, BÉNIN
+//             </h3>
+//           </div>
+//           <div className="flex flex-row gap-2 items-center justify-center mt-4">
+//             <FontAwesomeIcon icon={faWhatsapp} color="#25D366" size="2x" />
+//             <FontAwesomeIcon icon={faPhone} color="black" size="2x" />
+//             <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-customGreen font-bold flex items-center">
+//               <span className="mr-2">+229 </span> 98 82 63 63 / 47 47 47 39
+//             </p>
+//           </div>
+//         </div>
+//         <div className="w-full sm:w-1/2 p-4 items-start">
+//           <div className="flex flex-col">
+//             <div className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold ">
+//               <h2>ENTRÉE GALA: 10.000F</h2>
+//               <h2>TICKET TOMBOLA: 1.000F, 2.000F</h2>
+//               <h2>TICKET STAND: 20.000F</h2>
+//               <h2>INSCRIPTION POUR LE CONCOURS: 15.000F</h2>
+//             </div>
+//           </div>
+//           <div className="flex mt-4">
+//             <button
+//               onClick={openModal}
+//               className="bg-customGreen text-customYellow text-center text-3xl tracking-tight py-2 px-4 cursor-pointer"
+//             >
+//               COMMANDEZ VOS TICKETS
+//             </button>
+//           </div>
+//         </div>
+//       </div>
+//       {isModalOpen && (
+//         <div
+//           className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50"
+//           onClick={closeModal}
+//         >
+//           <div
+//             className="bg-white rounded-lg shadow-lg p-8 w-80"
+//             onClick={(e) => e.stopPropagation()}
+//           >
+//             <h2 className="text-2xl font-bold mb-4 text-center">Choisissez votre activité</h2>
+//             <select
+//               value={selectedActivity || ""}
+//               onChange={handleActivityChange}
+//               className="w-full p-2 border border-gray-300 rounded mb-4"
+//             >
+//               <option value="">-- Sélectionnez une activité --</option>
+//               {activities.map((activity) => (
+//                 <option key={activity._id} value={activity._id}>
+//                   {activity.activitySimphat}
+//                 </option>
+//               ))}
+//             </select>
+//             {selectedAmount && (
+//               <p className="text-center font-semibold text-lg mt-2">
+//                 Montant: {selectedAmount} F
+//               </p>
+//             )}
+//             <div className="flex justify-end mt-6">
+//               <button
+//                 onClick={handleRegister}
+//                 className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700"
+//                 disabled={!selectedActivity || isRegistering}
+//               >
+//                 {isRegistering ? "Inscription en cours..." : "S'inscrire"}
+//               </button>
+//               <button
+//                 onClick={closeModal}
+//                 className="ml-2 bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-700"
+//               >
+//                 Fermer
+//               </button>
+//             </div>
+//           </div>
+//         </div>
+//       )}
+//     </div>
+//   );
+// };
+
+// export default ExpositionVentes;
 
 
 
