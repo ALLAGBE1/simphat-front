@@ -1,4 +1,12 @@
 // Programme.js
+import ms from "../../assets/partenaires/ms.png";
+import abrp from "../../assets/partenaires/abrp.png";
+import uac from "../../assets/partenaires/uac.png";
+import urmapha from "../../assets/partenaires/urmapha.png";
+import lbtmm from "../../assets/partenaires/lbtmm.png";
+
+
+// import ms from "../../assets/partenaires/ms.png";
 
 const ProgrammeCommunicationsSuite = () => {
   const programme = [
@@ -66,14 +74,68 @@ const ProgrammeCommunicationsSuite = () => {
       {/* Section Partenaires */}
       <div className="text-center mt-10">
         <h2 className="text-xl font-bold text-green-900">PARTENAIRES ET INSTITUTIONS</h2>
-        <p>MINISTÈRE DE LA SANTÉ<br />Programme National de la Pharmacopée et de la Médecine Traditionnelle (PNPMT)</p>
-        <div className="flex justify-center space-x-4 mt-4">
-          <img src="/path/to/abrp-logo.png" alt="ABRP" className="h-12" />
-          <img src="/path/to/uac-logo.png" alt="UAC" className="h-12" />
-          <img src="/path/to/urmapha-logo.png" alt="URMAPHA" className="h-12" />
-          <img src="/path/to/lbtmm-logo.png" alt="LBTMM" className="h-12" />
+        <img 
+          src={ms} alt="Lolo Andoche" 
+          className="w-5/6 sm:w-1/6 mx-auto " />
+
+        <p>Programme National de la Pharmacopée et <br /> de la Médecine Traditionnelle (PNPMT)</p>
+
+      </div>
+
+      {/* <div className="flex justify-center space-x-4 mt-4 mx-auto"> */}
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+        <div className="flex justify-center">
+          <img 
+            src={abrp} 
+            alt="Lolo Andoche" 
+            className=""
+            
+          />
+
+        </div>
+        <div className="flex justify-center">
+          <img 
+            src={uac} 
+            alt="Lolo Andoche" 
+            className="" 
+            width="170" 
+            height="80" 
+          />
+        </div>
+        <div className="flex justify-center">
+          <img 
+            src={urmapha} 
+            alt="Lolo Andoche" 
+            className="" 
+            width="170" 
+            height="80" 
+          />
+        </div>
+        <div className="flex justify-center">
+          <img 
+            src={lbtmm} 
+            alt="Lolo Andoche" 
+            className="" 
+            width="170" 
+            height="80" 
+          />
         </div>
       </div>
+
+      <div className="flex justify-center mt-8">
+        <div className="text-base sm:text-lg md:text-xl xl:text-2xl lg:text-3xl">
+          <p className="">1- Association Nationale de Tradipraticiens de la Médecine traditionnelle du Bénin <br /> (ANaPraMeTraB) : Prophète Gabriel SALAVI</p>
+          <p className="">2- La Fédération des Associations Nationnales des Acteurs de la Médécine <br />Traditionnelle du Bénin (FANAMeTraB) : Dah Badjito Kitcè Basile</p>
+          <p className="">3- Union des Organisations de Santé en Médecine Traditionnelle <br />(UOSMT) : Dah Kouglo Hontonyon Augustin</p>
+          <p className="">4- Fédération Nationale de la Médecine Traditionnelle du Bénin <br /> (FeNaMeTraB) : Professeur AZIADOME Kogblevi</p>
+          <p className="">5- Syndicat National des Médécins Intellectuels Traditionnels et assimilés du Bénin <br />(SyNaMITrAB) : Alphonse DANSOU</p>
+          <p className="">6- Association des Praticiens de la Médecine Naturelle et Assimilés au Bénin <br /> (APraMeNAB) : Vincent KOUDOGBO</p>
+        </div>
+      </div>
+
+
+
     </div>
   );
 };

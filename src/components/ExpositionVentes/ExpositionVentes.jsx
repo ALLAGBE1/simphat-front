@@ -128,7 +128,7 @@ const ExpositionVentes = () => {
           </div>z
 
         <Link to="/criteres">
-            <div className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-customGreen font-bold text-center">
+            <div className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-customGreen font-bold text-center underline">
                 <h3 className="">Voir les critères de sélection du meilleur produit</h3>
             </div>
         </Link>

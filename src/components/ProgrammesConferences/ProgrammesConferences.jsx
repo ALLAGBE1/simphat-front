@@ -8,6 +8,10 @@ const ProgrammesConferences = () => {
     <div className="container mx-auto p-10">
      <ProgrammeCommunications />
      <ProgrammeCommunicationsSuite />
+
+     {/* <div className="">
+      <h1 className="">PARTENAIRES ET INSTITUTIONS</h1>
+     </div> */}
     </div>
   );
 };
