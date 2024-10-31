@@ -24,7 +24,7 @@ import laRoche from "../assets/partenaires/la-roche.png";
 
 
 import batimat from "../assets/partenaires/batimat.png";
-import celtiis from "../assets/partenaires/celtiis.png";
+import celtiis from "../assets/partenaires/celtiisBenin.png";
 import moov from "../assets/partenaires/moov.png";
 import mtn from "../assets/partenaires/mtn.png";
 
