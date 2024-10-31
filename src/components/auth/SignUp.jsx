@@ -28,7 +28,7 @@ const SignUp = ({ onSignUpSuccess }) => {
     };
 
     try {
-      const response = await fetch("http://localhost:3000/users/register/", {
+      const response = await fetch("https://simphatnodejs.onrender.com/users/register/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -164,7 +164,7 @@ export default SignUp;
 //     };
 
 //     try {
-//       const response = await fetch("http://localhost:3000/users/register/", {
+//       const response = await fetch("https://simphatnodejs.onrender.com/users/register/", {
 //         method: "POST",
 //         headers: {
 //           "Content-Type": "application/json",
@@ -291,7 +291,7 @@ export default SignUp;
 //     };
 
 //     try {
-//       const response = await fetch("http://localhost:3000/users/register/", {
+//       const response = await fetch("https://simphatnodejs.onrender.com/users/register/", {
 //         method: "POST",
 //         headers: {
 //           "Content-Type": "application/json",
@@ -422,7 +422,7 @@ export default SignUp;
 //     };
 
 //     try {
-//       const response = await fetch("http://localhost:3000/users/register/", {
+//       const response = await fetch("https://simphatnodejs.onrender.com/users/register/", {
 //         method: "POST",
 //         headers: {
 //           "Content-Type": "application/json",
@@ -539,7 +539,7 @@ export default SignUp;
 //     };
 
 //     try {
-//       const response = await fetch("http://localhost:3000/users/register/", {
+//       const response = await fetch("https://simphatnodejs.onrender.com/users/register/", {
 //         method: "POST",
 //         headers: {
 //           "Content-Type": "application/json",
