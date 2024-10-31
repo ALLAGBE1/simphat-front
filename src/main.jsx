@@ -18,6 +18,7 @@ import './index.css'
 import HonoraryCommittee from './components/HonoraryCommittee/HonoraryCommittee.jsx'
 import Criteres from './components/Criteres/Criteres.jsx'
 import AboutUs from './components/AboutUs/AboutUs.jsx'
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   const location = useLocation();
@@ -27,6 +28,7 @@ function App() {
 
   return (
     <>
+    <Analytics />
       {showHeaderFooter && <Header />}
       <Routes>
         <Route path="/" element={<Home />} />
