@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client'
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
 import Home from './pages/Home/Home.jsx'
 import Conferences from './pages/Conferences/Conferences.jsx'
-import Contact from './components/Contact.jsx'
+// import Contact from './components/Contact.jsx'
 import Footer from './components/Footer/index.jsx'
 import { Header } from './components/Header/Header.jsx'
 import ExpositionVentes from './components/ExpositionVentes/ExpositionVentes.jsx'
@@ -31,7 +31,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/conferences" element={<Conferences />} />
-        <Route path="/contact" element={<Contact />} />
+        {/* <Route path="/contact" element={<Contact />} /> */}
         <Route path="/expositionVentes" element={<ExpositionVentes />} />
         <Route path="/dinergala" element={<Gala />} />
         <Route path="/participer" element={<Participer />} />
