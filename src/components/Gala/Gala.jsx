@@ -160,7 +160,7 @@ const Gala = () => {
                 <FontAwesomeIcon icon={faPhone} color="black" size="2x" />
                 <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 
                     text-customGreen font-bold flex items-center" >
-                    <span className="mr-2">+229 </span> 98 82 63 63 / 47 47 47 39
+                    <span className="mr-2">+229 </span> 98 82 63 63 / 47 47 47 39 / 67 78 78 06
                 </p>
             </div>
         </div>

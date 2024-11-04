@@ -146,15 +146,17 @@ const ExpositionVentes = () => {
             <FontAwesomeIcon icon={faWhatsapp} color="#25D366" size="2x" />
             <FontAwesomeIcon icon={faPhone} color="black" size="2x" />
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-customGreen font-bold flex items-center">
-              <span className="mr-2">+229 </span> 98 82 63 63 / 47 47 47 39
+              <span className="mr-2">+229 </span> 98 82 63 63 / 47 47 47 39 / 67 78 78 06
             </p>
           </div>
 
-        <Link to="/criteres">
-            <div className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-customGreen font-bold text-center underline">
-                <h3 className="">Voir les critères de sélection du meilleur produit</h3>
-            </div>
-        </Link>
+          <div className="mt-8">
+            <Link to="/criteres">
+                <div className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-customGreen font-bold text-center underline">
+                    <h3 className="">Voir les critères de sélection du meilleur produit</h3>
+                </div>
+            </Link>
+          </div>
           
 
       </div>

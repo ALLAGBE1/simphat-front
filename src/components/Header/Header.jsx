@@ -94,6 +94,7 @@ export const Header = () => {
           <Link to="/programmesConferences" className="hover:text-gray-200 text-white text-lg font-bold">PROGRAMME DU SIMPHAT</Link>
           <Link to="/dinergala" className="hover:text-gray-200 text-white text-lg font-bold">DÎNER DE GALA</Link>
           <Link to="/participer" className="hover:text-gray-200 text-white text-lg font-bold">PARTICIPER</Link>
+          <Link to="/contact" className="hover:text-gray-200 text-white text-lg font-bold">CONTACT</Link>
 
           {/* Trait séparateur */}
           <hr className="border-t border-gray-200 w-full my-2" />

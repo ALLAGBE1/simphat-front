@@ -19,6 +19,7 @@ import HonoraryCommittee from './components/HonoraryCommittee/HonoraryCommittee.
 import Criteres from './components/Criteres/Criteres.jsx'
 import AboutUs from './components/AboutUs/AboutUs.jsx'
 import { Analytics } from "@vercel/analytics/react"
+import Contact from './components/Contact/Contact.jsx'
 
 function App() {
   const location = useLocation();
@@ -42,6 +43,7 @@ function App() {
         <Route path="/programmesConferences" element={<ProgrammesConferences />} />
         <Route path="/criteres" element={<Criteres /> } />
         <Route path="/aboutus" element={<AboutUs /> } />
+        <Route path="/contact" element={<Contact />  } />
         <Route path="/auth" element={<Auth />} />
         <Route path="/honoraryCommittee" element={<HonoraryCommittee />} />
         <Route path="/admin" element={<Admin />} /> {/* Route pour l'admin */}
