@@ -45,7 +45,7 @@ export default function Footer() {
                 <li>
                     {/* <Link to="/#" className="lg:text-[13px]"> */}
                     <Heading as="p" className="text-[16px] font-medium uppercase text-[#ffffff]">
-                        BOUTIQUE “SANTÉ PAR LES PLANTES”
+                        BOUTIQUE “LA MAISON DES PLANTES”
                     </Heading>
                     {/* </Link> */}
                 </li>
@@ -102,6 +102,10 @@ export default function Footer() {
             </ul>
         </div>
         
+      </div>
+
+      <div className="">
+        <h5 className="text-customWhite text-center">@SIMPHAT 2024 Tous droits réservés</h5>
       </div>
       <div className="">
             <Img 

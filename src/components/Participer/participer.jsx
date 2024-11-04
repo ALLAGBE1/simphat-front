@@ -33,21 +33,6 @@ const Participer = () => {
 
         </div>
 
-        {/* <div className="">
-            <Link to="/themeConferences">
-                <div className="flex justify-center">
-                    <h2 
-                        className="inline-block
-                            text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 
-                            bg-customGreen text-white font-bold tracking-tight py-2 px-4 cursor-pointer
-                            
-                        ">
-                        CONSULTER LES THEMES DE CONFERENCES
-                    </h2>
-                </div>
-            </Link>
-        </div> */}
-
         <div className="flex flex-col sm:flex-row text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl mt-8">
             
             <div className="w-full flex justify-center">
