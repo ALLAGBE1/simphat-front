@@ -1,11 +1,12 @@
 
-import DrJustin2 from "../../assets/forPages/DrJustin2.png"
+import DrJustin3 from "../../assets/forPages/DrJustin3.png"
+import AfficheSimphat from "../../assets/forPages/AfficheSimphat.png"
 // import Info from "./Info"
 
 const AboutUs = () => {
   return (
     <div className="container mx-auto p-10" >
-        <div className="flex flex-col sm:flex-row text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">
+        <div className="flex flex-col sm:flex-row text-base sm:text-lg md:text-xl lg:text-2xl xl:text-2xl">
             
             <div className="w-full flex justify-center">
                 <div              
@@ -28,7 +29,7 @@ const AboutUs = () => {
             <div className="w-full sm:w-1/3">
                 <div className="flex flex-col items-center">
                     <img 
-                        src={DrJustin2} 
+                        src={DrJustin3} 
                         alt="Dr Justin" 
                         className="max-w-full h-auto mx-auto sm:w-32 sm:h-32 md:w-48 md:h-48 lg:w-64 lg:h-64 xl:w-80 xl:h-80" 
                         />
@@ -37,14 +38,18 @@ const AboutUs = () => {
 
                 </div>
             </div>
-            <div className="w-full sm:w-4/5 p-8">
-                <p className="mb-3">
-                Le Salon International de la Médecine et de la Pharmacopée Traditionnelles
-                </p>
+            <div className="w-full sm:w-2/5 p-8">
+                <div className="flex flex-col items-center">
+                    <img 
+                        src={AfficheSimphat} 
+                        alt="Dr Justin" 
+                        className="max-w-full h-auto mx-auto sm:w-32 sm:h-32 md:w-48 md:h-48 lg:w-64 lg:h-64 xl:w-80 xl:h-80" 
+                        />
+                </div>
                 
             </div>
 
-            {/* <div className="w-full sm:w-1/5 hidden sm:flex ">
+            {/* <div className="w-full sm:w-1/5 hidden sm:flex bg-pink-700">
                 <div className="flex flex-col items-center">
                     
                 </div>
