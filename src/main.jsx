@@ -13,7 +13,7 @@ import Sponsors from './components/Sponsors/Sponsors.jsx'
 import ThemeConferances from './components/ThemeConferences/ThemeConferences.jsx'
 import ProgrammesConferences from './components/ProgrammesConferences/ProgrammesConferences.jsx'
 import Auth from './components/auth/Auth.jsx'
-import Admin from './components/Admin/Admin.jsx' // Assure-toi que le chemin est correct pour le composant Admin
+import Admin from './components/Admin/Admin.jsx' 
 import './index.css'
 import HonoraryCommittee from './components/HonoraryCommittee/HonoraryCommittee.jsx'
 import Criteres from './components/Criteres/Criteres.jsx'

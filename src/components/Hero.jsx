@@ -1,7 +1,9 @@
 
 import DrJustin from "../assets/forPages/DrJustin.png"
+import MrTalon from "../assets/forPages/MrTalon.png"
 import Info from "./Info"
 import bgImage from "../assets/forPages/vegetables.png"
+import { Link,  } from 'react-router-dom';
 
 const Hero = () => {
   return (
@@ -36,35 +38,74 @@ const Hero = () => {
         </div>
 
 
-        <div className="flex flex-col-reverse sm:flex-row text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">
-            <div className="w-full sm:w-1/3">
+        <div className="flex flex-col-reverse sm:flex-row text-base sm:text-lg md:text-xl lg:text-1xl xl:text-1xl">
+            <div className="w-full sm:w-1/3 ">
                 <div className="flex flex-col items-center">
-                    <img 
-                        src={DrJustin} 
-                        alt="Dr Justin" 
-                        className="max-w-full h-auto mx-auto sm:w-32 sm:h-32 md:w-48 md:h-48 lg:w-64 lg:h-64 xl:w-80 xl:h-80" 
-                        />
-                    <h2 className="text-customGreen text-center">Dr Justin NOUDEDJI</h2>
-                    <h3 className="text-customBlack text-center">Initiateur et Coordonnateur Général du SIMPHAT</h3>
-
+                    <div className="mb-5">
+                        <img 
+                            src={MrTalon} 
+                            alt="Mr Talon" 
+                            className="max-w-full h-auto mx-auto sm:w-32 sm:h-32 md:w-48 md:h-48 lg:w-60 lg:h-60 xl:w-76 xl:h-76" 
+                            />
+                        <h2 className="text-customGreen text-center">SEM Patrice TALON</h2>
+                        <h3 className="text-customBlack text-center">Président de la République</h3>
+                    </div>
+                    
                 </div>
             </div>
-            <div className="w-full sm:w-4/5 bg-customLightGray p-8" style={{ borderRadius: '26px' }}>
+            <div className="w-full sm:w-8/9 bg-customLightGray p-8" style={{ borderRadius: '26px' }}>
                 <p className="mb-3">
                     Le Gouvernement béninois a fait une place de choix à la Médecine traditionnelle dans la loi portant la protection de la santé des personnes, et  donc une ambition clairement affichée de son chef  de faire de ce secteur un des piliers du dispositif sanitaire du pays. Dans ce même élan, et pour soutenir la vision du Chef de  l’Etat, le Salon International de la Médecine et de la Pharmacopée Traditionnelles (SIMPHAT) a pour objectif de réunir les acteurs du secteur afin de promouvoir et valoriser ce secteur jusqu’alors informel mais auquel 80% de la population fait recours. Ce salon se déroulera suivant trois (03) volets : 
                 </p>
-                <p className="font-bold">
+                <p className="font-bold mb-1">
                     Expositions-Ventes:  27 au 30 Novembre <br />
                     Conférences-Débats: 27 au 29 Novembre <br />
                     Diner de Gala: 30 Novembre
                 </p>
+
+                <div className="flex justify-end">
+                    <Link to="/programmesConferences">
+                        <div              
+                            className="
+                            inline-block
+                            text-base sm:text-lg md:text-xl lg:text-1xl xl:text-1xl 
+                            bg-customGreen text-white tracking-tight 
+                            py-2 px-4 rounded-[16px] mb-2
+                            max-w-lg
+                            "
+                        >
+                            Voir programme
+                        </div>
+                    </Link>
+                </div>
             </div>
 
-            <div className="w-full sm:w-1/5 hidden sm:flex ">
+            {/* <div className="w-full sm:w-1/5 hidden sm:flex bg-red-600">
                 <div className="flex flex-col items-center">
                     
                 </div>
-            </div> 
+            </div>  */}
+        </div>
+
+        <div className="flex flex-col-reverse sm:flex-row text-base sm:text-lg md:text-xl lg:text-2xl xl:text-2xl">
+            <div className="w-full sm:w-1/3 ">
+                <div className="flex flex-col items-center">
+
+                    <div className="">
+                        <img 
+                            src={DrJustin} 
+                            alt="Dr Justin" 
+                            className="max-w-full h-auto mx-auto sm:w-32 sm:h-32 md:w-48 md:h-48 lg:w-60 lg:h-60 xl:w-76 xl:h-76" 
+                            />
+                        <h2 className="text-customGreen text-center">Dr Justin NOUDEDJI</h2>
+                        <h3 className="text-customBlack text-center">Initiateur et Coordonnateur Général du SIMPHAT</h3>
+                    </div>
+                    
+                </div>
+            </div>
+            <div className="w-full sm:w-8/9 p-8" style={{ borderRadius: '26px' }}>
+                
+            </div>
         </div>
     </div>
   )
