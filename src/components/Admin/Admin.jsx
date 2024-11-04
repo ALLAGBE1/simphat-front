@@ -13,7 +13,7 @@ const EspaceAdmin = () => {
       setLoading(true);
       const status = activeTab === "Non Validé" ? "false" : "true";
       try {
-        const response = await fetch(`https://simphatnodejs.onrender.com/registerActivity/status/${status}`);
+        const response = await fetch(`https://simphat-api.vercel.app/registerActivity/status/${status}`);
         const data = await response.json();
         setActivities(data);
       } catch (error) {
@@ -30,7 +30,7 @@ const EspaceAdmin = () => {
   const handleValidation = async (id) => {
     try {
       // Appel API pour valider l'activité
-      const response = await fetch(`https://simphatnodejs.onrender.com/registerActivity/${id}`, {
+      const response = await fetch(`https://simphat-api.vercel.app/registerActivity/${id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -53,7 +53,7 @@ const EspaceAdmin = () => {
   useEffect(() => {
     const fetchUserCount = async () => {
       try {
-        const response = await fetch("https://simphatnodejs.onrender.com/users/count");
+        const response = await fetch("https://simphat-api.vercel.app/users/count");
         const data = await response.json();
         setUserCount(data.count); // Assurez-vous que la réponse a bien une clé `count`
       } catch (error) {
@@ -218,7 +218,7 @@ export default EspaceAdmin;
 //       setLoading(true);
 //       const status = activeTab === "Non Validé" ? "false" : "true";
 //       try {
-//         const response = await fetch(`https://simphatnodejs.onrender.com/registerActivity/status/${status}`);
+//         const response = await fetch(`https://simphat-api.vercel.app/registerActivity/status/${status}`);
 //         const data = await response.json();
 //         setActivities(data);
 //       } catch (error) {
@@ -235,7 +235,7 @@ export default EspaceAdmin;
 //   const handleValidation = async (id) => {
 //     try {
 //       // Appel API pour valider l'activité
-//       const response = await fetch(`https://simphatnodejs.onrender.com/registerActivity/${id}`, {
+//       const response = await fetch(`https://simphat-api.vercel.app/registerActivity/${id}`, {
 //         method: "PUT",
 //         headers: {
 //           "Content-Type": "application/json",
@@ -410,7 +410,7 @@ export default EspaceAdmin;
 //       setLoading(true);
 //       const status = activeTab === "Non Validé" ? "false" : "true";
 //       try {
-//         const response = await fetch(`https://simphatnodejs.onrender.com/registerActivity/status/${status}`);
+//         const response = await fetch(`https://simphat-api.vercel.app/registerActivity/status/${status}`);
 //         const data = await response.json();
 //         setActivities(data);
 //       } catch (error) {
@@ -426,7 +426,7 @@ export default EspaceAdmin;
 //   // Fonction pour valider une activité
 //   const handleValidation = async (id) => {
 //     try {
-//       await fetch(`https://simphatnodejs.onrender.com/registerActivity/validate/${id}`, {
+//       await fetch(`https://simphat-api.vercel.app/registerActivity/validate/${id}`, {
 //         method: "POST",
 //         headers: {
 //           "Content-Type": "application/json",
@@ -588,7 +588,7 @@ export default EspaceAdmin;
 //   useEffect(() => {
 //     const fetchStatusFalseData = async () => {
 //       try {
-//         const response = await fetch("https://simphatnodejs.onrender.com/registerActivity/status/false");
+//         const response = await fetch("https://simphat-api.vercel.app/registerActivity/status/false");
 //         const data = await response.json();
 //         setStatusFalseData(data);
 //       } catch (error) {
@@ -604,7 +604,7 @@ export default EspaceAdmin;
 //   // Fonction pour valider une activité
 //   const handleValidation = async (id) => {
 //     try {
-//       await fetch(`https://simphatnodejs.onrender.com/registerActivity/validate/${id}`, {
+//       await fetch(`https://simphat-api.vercel.app/registerActivity/validate/${id}`, {
 //         method: "POST",
 //         headers: {
 //           "Content-Type": "application/json",

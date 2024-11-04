@@ -26,7 +26,7 @@ const Login = () => {
     };
 
     try {
-      const response = await fetch("https://simphatnodejs.onrender.com/users/login/", {
+      const response = await fetch("https://simphat-api.vercel.app/users/login/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -145,7 +145,7 @@ export default Login;
 //     };
 
 //     try {
-//       const response = await fetch("https://simphatnodejs.onrender.com/users/login/", {
+//       const response = await fetch("https://simphat-api.vercel.app/users/login/", {
 //         method: "POST",
 //         headers: {
 //           "Content-Type": "application/json",
@@ -262,7 +262,7 @@ export default Login;
 //     };
 
 //     try {
-//       const response = await fetch("https://simphatnodejs.onrender.com/users/login/", {
+//       const response = await fetch("https://simphat-api.vercel.app/users/login/", {
 //         method: "POST",
 //         headers: {
 //           "Content-Type": "application/json",
@@ -368,7 +368,7 @@ export default Login;
 //     };
 
 //     try {
-//       const response = await fetch("https://simphatnodejs.onrender.com/users/login/", {
+//       const response = await fetch("https://simphat-api.vercel.app/users/login/", {
 //         method: "POST",
 //         headers: {
 //           "Content-Type": "application/json",

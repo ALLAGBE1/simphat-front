@@ -26,7 +26,7 @@ const ExpositionVentes = () => {
 
   const fetchActivities = async () => {
     try {
-      const response = await fetch("https://simphatnodejs.onrender.com/activitySimphat/");
+      const response = await fetch("https://simphat-api.vercel.app/activitySimphat/");
       const data = await response.json();
       setActivities(data);
     } catch (error) {
@@ -57,7 +57,7 @@ const ExpositionVentes = () => {
 
     try {
       setIsRegistering(true);
-      const response = await fetch("https://simphatnodejs.onrender.com/registerActivity/", {
+      const response = await fetch("https://simphat-api.vercel.app/registerActivity/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -243,7 +243,7 @@ export default ExpositionVentes;
 
 //   const fetchActivities = async () => {
 //     try {
-//       const response = await fetch("https://simphatnodejs.onrender.com/activitySimphat/");
+//       const response = await fetch("https://simphat-api.vercel.app/activitySimphat/");
 //       const data = await response.json();
 //       setActivities(data);
 //     } catch (error) {
@@ -274,7 +274,7 @@ export default ExpositionVentes;
 
 //     try {
 //       setIsRegistering(true);
-//       const response = await fetch("https://simphatnodejs.onrender.com/registerActivity/", {
+//       const response = await fetch("https://simphat-api.vercel.app/registerActivity/", {
 //         method: "POST",
 //         headers: {
 //           "Content-Type": "application/json",
@@ -428,7 +428,7 @@ export default ExpositionVentes;
 
 //   const fetchActivities = async () => {
 //     try {
-//       const response = await fetch("https://simphatnodejs.onrender.com/activitySimphat/");
+//       const response = await fetch("https://simphat-api.vercel.app/activitySimphat/");
 //       const data = await response.json();
 //       setActivities(data);
 //     } catch (error) {
@@ -459,7 +459,7 @@ export default ExpositionVentes;
 
 //     try {
 //       setIsRegistering(true);
-//       const response = await fetch("https://simphatnodejs.onrender.com/registerActivity/", {
+//       const response = await fetch("https://simphat-api.vercel.app/registerActivity/", {
 //         method: "POST",
 //         headers: {
 //           "Content-Type": "application/json",
@@ -474,7 +474,7 @@ export default ExpositionVentes;
 //         alert("Inscription réussie !");
         
 //         // Initiation du paiement avec token FedaPay
-//         const paymentResponse = await fetch("https://simphatnodejs.onrender.com/payment/initiate", {
+//         const paymentResponse = await fetch("https://simphat-api.vercel.app/payment/initiate", {
 //           method: "POST",
 //           headers: {
 //             "Content-Type": "application/json",
@@ -639,7 +639,7 @@ export default ExpositionVentes;
 //   // Charger les activités depuis l'API
 //   const fetchActivities = async () => {
 //     try {
-//       const response = await fetch("https://simphatnodejs.onrender.com/activitySimphat/");
+//       const response = await fetch("https://simphat-api.vercel.app/activitySimphat/");
 //       const data = await response.json();
 //       setActivities(data);
 //     } catch (error) {
@@ -677,7 +677,7 @@ export default ExpositionVentes;
 
 //     try {
 //       setIsRegistering(true); // Indicateur de chargement
-//       const response = await fetch("https://simphatnodejs.onrender.com/registerActivity/", {
+//       const response = await fetch("https://simphat-api.vercel.app/registerActivity/", {
 //         method: "POST",
 //         headers: {
 //           "Content-Type": "application/json",
@@ -824,7 +824,7 @@ export default ExpositionVentes;
 
 //   const fetchActivities = async () => {
 //     try {
-//       const response = await fetch("https://simphatnodejs.onrender.com/activitySimphat/");
+//       const response = await fetch("https://simphat-api.vercel.app/activitySimphat/");
 //       const data = await response.json();
 //       setActivities(data);
 //     } catch (error) {
@@ -855,7 +855,7 @@ export default ExpositionVentes;
 
 //     try {
 //       setIsRegistering(true);
-//       const response = await fetch("https://simphatnodejs.onrender.com/registerActivity/", {
+//       const response = await fetch("https://simphat-api.vercel.app/registerActivity/", {
 //         method: "POST",
 //         headers: {
 //           "Content-Type": "application/json",
@@ -870,7 +870,7 @@ export default ExpositionVentes;
 //         alert("Inscription réussie !");
         
 //         // Initiation du paiement avec token FedaPay
-//         const paymentResponse = await fetch("https://simphatnodejs.onrender.com/payment/initiate", {
+//         const paymentResponse = await fetch("https://simphat-api.vercel.app/payment/initiate", {
 //           method: "POST",
 //           headers: {
 //             "Content-Type": "application/json",
@@ -1033,7 +1033,7 @@ export default ExpositionVentes;
 
 //   const fetchActivities = async () => {
 //     try {
-//       const response = await fetch("https://simphatnodejs.onrender.com/activitySimphat/");
+//       const response = await fetch("https://simphat-api.vercel.app/activitySimphat/");
 //       const data = await response.json();
 //       setActivities(data);
 //     } catch (error) {
@@ -1064,7 +1064,7 @@ export default ExpositionVentes;
 
 //     try {
 //       setIsRegistering(true);
-//       const response = await fetch("https://simphatnodejs.onrender.com/registerActivity/", {
+//       const response = await fetch("https://simphat-api.vercel.app/registerActivity/", {
 //         method: "POST",
 //         headers: {
 //           "Content-Type": "application/json",
@@ -1077,7 +1077,7 @@ export default ExpositionVentes;
 
 //       if (response.ok) {
 //         alert("Inscription réussie !");
-//         const paymentResponse = await fetch("https://simphatnodejs.onrender.com/payment/initiate", {
+//         const paymentResponse = await fetch("https://simphat-api.vercel.app/payment/initiate", {
 //           method: "POST",
 //           headers: {
 //             "Content-Type": "application/json",
@@ -1235,7 +1235,7 @@ export default ExpositionVentes;
 
 //   const fetchActivities = async () => {
 //     try {
-//       const response = await fetch("https://simphatnodejs.onrender.com/activitySimphat/");
+//       const response = await fetch("https://simphat-api.vercel.app/activitySimphat/");
 //       const data = await response.json();
 //       setActivities(data);
 //     } catch (error) {
@@ -1266,7 +1266,7 @@ export default ExpositionVentes;
 
 //     try {
 //       setIsRegistering(true);
-//       const response = await fetch("https://simphatnodejs.onrender.com/registerActivity/", {
+//       const response = await fetch("https://simphat-api.vercel.app/registerActivity/", {
 //         method: "POST",
 //         headers: {
 //           "Content-Type": "application/json",
@@ -1279,7 +1279,7 @@ export default ExpositionVentes;
 
 //       if (response.ok) {
 //         alert("Inscription réussie !");
-//         const paymentResponse = await fetch("https://simphatnodejs.onrender.com/payment/initiate", {
+//         const paymentResponse = await fetch("https://simphat-api.vercel.app/payment/initiate", {
 //           method: "POST",
 //           headers: {
 //             "Content-Type": "application/json",
@@ -1447,7 +1447,7 @@ export default ExpositionVentes;
 //   // Charger les activités depuis l'API
 //   const fetchActivities = async () => {
 //     try {
-//       const response = await fetch("https://simphatnodejs.onrender.com/activitySimphat/");
+//       const response = await fetch("https://simphat-api.vercel.app/activitySimphat/");
 //       const data = await response.json();
 //       setActivities(data);
 //     } catch (error) {
@@ -1485,7 +1485,7 @@ export default ExpositionVentes;
 
 //     try {
 //       setIsRegistering(true); // Indicateur de chargement
-//       const response = await fetch("https://simphatnodejs.onrender.com/registerActivity/", {
+//       const response = await fetch("https://simphat-api.vercel.app/registerActivity/", {
 //         method: "POST",
 //         headers: {
 //           "Content-Type": "application/json",
@@ -1631,7 +1631,7 @@ export default ExpositionVentes;
 //   // Fonction pour récupérer les activités depuis l'API
 //   const fetchActivities = async () => {
 //     try {
-//       const response = await fetch("https://simphatnodejs.onrender.com/activitySimphat/");
+//       const response = await fetch("https://simphat-api.vercel.app/activitySimphat/");
 //       const data = await response.json();
 //       setActivities(data);
 //     } catch (error) {

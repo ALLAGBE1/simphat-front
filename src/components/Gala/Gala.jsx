@@ -25,7 +25,7 @@ const Gala = () => {
 
   const fetchActivities = async () => {
     try {
-      const response = await fetch("https://simphatnodejs.onrender.com/activitySimphat/");
+      const response = await fetch("https://simphat-api.vercel.app/activitySimphat/");
       const data = await response.json();
       setActivities(data);
     } catch (error) {
@@ -56,7 +56,7 @@ const Gala = () => {
 
     try {
       setIsRegistering(true);
-      const response = await fetch("https://simphatnodejs.onrender.com/registerActivity/", {
+      const response = await fetch("https://simphat-api.vercel.app/registerActivity/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
