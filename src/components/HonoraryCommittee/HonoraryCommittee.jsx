@@ -32,11 +32,11 @@ const HonoraryCommittee = () => {
                                 </p>
                             </div>
 
-                            <div className="">
+                            {/* <div className="">
                                 <p className="text-customBlack">
                                     PRIX “ABDOULAYE BIO TCHANE” POUR L’INNOVATION ET LA RECHERCHE D’UNE VALEUR DE 1.800.000F CFA
                                 </p>
-                            </div>
+                            </div> */}
 
                         </div>
                     </div>
@@ -59,11 +59,11 @@ const HonoraryCommittee = () => {
                                 </p>
                             </div>
 
-                            <div className="">
+                            {/* <div className="">
                                 <p className="text-customBlack">
                                     PRIX SPÉCIAL PROF BENJAMIN HOUNKPATIN D’UNE VALEUR DE 500.000F CFA
                                 </p>
-                            </div>
+                            </div> */}
 
                         </div>
                     </div>
@@ -86,11 +86,11 @@ const HonoraryCommittee = () => {
                                 </p>
                             </div>
 
-                            <div className="">
+                            {/* <div className="">
                                 <p className="text-customBlack">
                                     PRIX SPÉCIAL D’UNE VALEUR DE 200.000F CFA
                                 </p>
-                            </div>
+                            </div> */}
 
                         </div>
                     </div>
