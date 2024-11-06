@@ -144,12 +144,12 @@ const AboutUs = () => {
 
             <div className="flex justify-center mt-8">
                 <div className="text-base sm:text-lg md:text-xl xl:text-2xl lg:text-3xl">
-                    <p className="">1- Association Nationale de Tradipraticiens de la Médecine traditionnelle du Bénin <br /> <span className="font-bold">(ANaPraMeTraB)</span> : Prophète Gabriel SALAVI</p>
-                    <p className="">2- La Fédération des Associations Nationnales des Acteurs de la Médécine <br />Traditionnelle du Bénin <span className="font-bold">(FANAMeTraB)</span> : Dah Badjito Kitcè Basile</p>
-                    <p className="">3- Union des Organisations de Santé en Médecine Traditionnelle <br /><span className="font-bold">(UOSMT)</span> : Dah Kouglo Hontonyon Augustin</p>
-                    <p className="">4- Fédération Nationale de la Médecine Traditionnelle du Bénin <br /> <span className="font-bold">(FeNaMeTraB)</span> : Professeur AZIADOME Kogblevi</p>
-                    <p className="">5- Syndicat National des Médécins Intellectuels Traditionnels et Assimilés du Bénin <br /> <span className="font-bold">(SyNaMITrAB)</span> : Alphonse DANSOU</p>
-                    <p className="">6- Association des Praticiens de la Médecine Naturelle et Assimilés au Bénin <br /> <span className="font-bold">(APraMeNAB)</span> : Vincent KOUDOGBO</p>
+                    <p className="">1- Association Nationale de Tradipraticiens de la Médecine traditionnelle du Bénin <br /> <span className="font-bold">(ANaPraMeTraB) : Prophète Gabriel SALAVI</span></p>
+                    <p className="">2- La Fédération des Associations Nationnales des Acteurs de la Médécine <br />Traditionnelle du Bénin <span className="font-bold">(FANAMeTraB) : Dah Badjito Kitcè Basile</span></p>
+                    <p className="">3- Union des Organisations de Santé en Médecine Traditionnelle <br /><span className="font-bold">(UOSMT) : Dah Kouglo Hontonyon Augustin</span></p>
+                    <p className="">4- Fédération Nationale de la Médecine Traditionnelle du Bénin <br /> <span className="font-bold">(FeNaMeTraB) : Professeur AZIADOME Kogblevi</span></p>
+                    <p className="">5- Syndicat National des Médécins Intellectuels Traditionnels et Assimilés du Bénin <br /> <span className="font-bold">(SyNaMITrAB) : Alphonse DANSOU</span></p>
+                    <p className="">6- Association des Praticiens de la Médecine Naturelle et Assimilés au Bénin <br /> <span className="font-bold">(APraMeNAB) : Vincent KOUDOGBO</span></p>
                 </div>
             </div>
         </div>
