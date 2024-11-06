@@ -1,8 +1,7 @@
-
-import reunion1 from "../../assets/forPages/reunion1.png";
-import reunion2 from "../../assets/forPages/reunion2.png";
-import paticipants from "../../assets/forPages/participants.png";
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 
 
@@ -11,29 +10,18 @@ const Participer = () => {
   return (
     <div className="container mx-auto p-10">
         <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-customGreen font-bold text-center mb-8">PARTICIPER</h2>
-        <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-black font-bold text-center mb-8">AUX DIFFÉRENTES CONFÉRENCES</h2>
-        <div className="flex flex-col sm:flex-row mb-5 justify-center">
-            <div className="w-full sm:w-4/5 flex justify-center mb-3 sm:mb-0">
-                <div className="">
-                    <img src={reunion1} alt="Réunion 1" className="max-w-full h-auto mx-auto sm:w-834 sm:h-32 md:w-834 md:h-48 lg:w-834 lg:h-64 xl:w-834 xl:h-834" />
-                </div>
-            </div>
+        {/* <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-black font-bold text-center mb-8">AUX DIFFÉRENTES CONFÉRENCES</h2> */}
+        <p className="text-base sm:text-lg md:text-xl lg:text-1xl xl:text-1xl text-black font-bold text-center mt-10">SI VOUS VOULEZ PARTICIPER AU CONCOURS DU<br /> MEILLEUR PRODUIT, CONTACTEZ</p>
 
-            <div className="w-full sm:w-1/2 flex mb-3 sm:mb-0">
-                <div className="flex items-start">
-                    <img src={reunion2} alt="Réunion 2" className="max-w-full h-auto mx-auto sm:w-443 sm:h-32 md:w-443 md:h-48 lg:w-443 lg:h-64 xl:w-443 xl:h-443" />
-                </div>
-            </div>
-
-            <div className="w-full sm:w-1/2 flex mb-3 sm:mb-0">
-                <div className="flex items-start">
-                    <img src={paticipants} alt="Réunion 2" className="max-w-full h-auto mx-auto sm:w-443 sm:h-32 md:w-443 md:h-48 lg:w-443 lg:h-64 xl:w-443 xl:h-443" />
-                </div>
-            </div>
-
+        <div className="flex flex-row gap-2 items-center justify-center mt-8">
+            <FontAwesomeIcon icon={faWhatsapp} color="#25D366" size="2x" />
+            <FontAwesomeIcon icon={faPhone} color="black" size="2x" />
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-customGreen font-bold flex items-center">
+              <span className="mr-2">+229 </span> 98 82 63 63 / 47 47 47 39 / 67 78 78 06
+            </p>
         </div>
-
-        <div className="flex flex-col sm:flex-row text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl mt-8">
+        
+        <div className="flex flex-col sm:flex-row text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl mt-10">
             
             <div className="w-full flex justify-center">
                 <div              
@@ -49,7 +37,7 @@ const Participer = () => {
                     <Link to="/themeConferences">
                         <h2 
                             >
-                            CONSULTER LES THEMES DE CONFERENCES
+                            CONSULTER LES THÈMES DE COMMUNICATION
                         </h2>
                     </Link>
                 </div>

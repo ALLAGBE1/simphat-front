@@ -1,5 +1,5 @@
 import Hounkpatin from "../../assets/forPages/benjaminHounkpatin.png"
-import Bio from "../../assets/forPages/Bio.png"
+import Bio3 from "../../assets/forPages/Bio3.png"
 import '../../App.css';
 import DrJustin from "../../assets/forPages/DrJustin.png";
 
@@ -17,7 +17,7 @@ const HonoraryCommittee = () => {
                 <div className="flex flex-col sm:flex-row bg-customGreen bg-opacity-20 rounded-tl-[40px] rounded-br-[40px] mb-5 sm:mb-10">
         
                     <div className="w-full md:w-1/2">
-                        <img src={Bio} alt="" className="max-w-full h-auto mx-auto sm:w-32 sm:h-32 md:w-48 md:h-48 lg:w-64 lg:h-64 xl:w-80 xl:h-80" />
+                        <img src={Bio3} alt="" className="max-w-full h-auto mx-auto sm:w-32 sm:h-32 md:w-48 md:h-48 lg:w-64 lg:h-64 xl:w-80 xl:h-80" />
                     </div>
 
                     <div className="w-full md:w-4/5 font-bold flex items-center ">

@@ -1,5 +1,5 @@
 
-import DrJustin from "../assets/forPages/DrJustin.png"
+import Bio3 from "../assets/forPages/Bio3.png"
 import MrTalon from "../assets/forPages/MrTalon.png"
 import Info from "./Info"
 import bgImage from "../assets/forPages/vegetables.png"
@@ -87,18 +87,18 @@ const Hero = () => {
             </div>  */}
         </div>
 
-        <div className="flex flex-col-reverse sm:flex-row text-base sm:text-lg md:text-xl lg:text-2xl xl:text-2xl">
+        <div className="flex flex-col-reverse sm:flex-row text-base sm:text-lg md:text-xl lg:text-1xl xl:text-1xl">
             <div className="w-full sm:w-1/3 ">
                 <div className="flex flex-col items-center">
 
                     <div className="">
                         <img 
-                            src={DrJustin} 
-                            alt="Dr Justin" 
+                            src={Bio3} 
+                            alt="Bio" 
                             className="max-w-full h-auto mx-auto sm:w-32 sm:h-32 md:w-48 md:h-48 lg:w-60 lg:h-60 xl:w-76 xl:h-76" 
                             />
-                        <h2 className="text-customGreen text-center">Dr Justin NOUDEDJI</h2>
-                        <h3 className="text-customBlack text-center">Initiateur et Coordonnateur Général du SIMPHAT</h3>
+                        <h2 className="text-customGreen text-center">SEM Abdoulaye BIO TCHANE</h2>
+                        <h3 className="text-customBlack text-center">Ministre d’Etat chargé du Développement et de la Coordination de l’Action Gouvernementale, Parrain du SIMPHAT</h3>
                     </div>
                     
                 </div>
