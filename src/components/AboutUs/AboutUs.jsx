@@ -228,7 +228,7 @@ const AboutUs = () => {
 
         <div className="mt-10">
             <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-2xl text-customGreen text-center font-bold mb-8">
-                LA MAISON DES PLANTES
+                “LA MAISON DES PLANTES”
             </h2>
             <div className="flex flex-col ">
             <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-2xl text-customBlack font-bold text-center">

@@ -15,7 +15,7 @@ const Contact = () => {
         SECRÉTARIAT PERMANENT DU SIMPHAT
       </h2>
       <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-customGreen text-center font-bold mb-8 underline">
-        LA MAISON DES PLANTES
+        “LA MAISON DES PLANTES”
       </h2>
       {/* <div className="flex flex-col sm:flex-row"> */}
       <div className="flex flex-col ">

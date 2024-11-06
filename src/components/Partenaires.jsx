@@ -190,8 +190,8 @@ const Partenaires = () => {
 
       <div className="flex justify-between items-center mb-5">
 
-<img 
-          src={abrp} alt="OFMAS" 
+    <img 
+          src={abrp} alt="abrp" 
           className="w-1/6 sm:w-1/6 " />
         
         <img 
@@ -202,7 +202,7 @@ const Partenaires = () => {
           src={uac} alt="Agoualand" 
           className="w-1/6 sm:w-1/6 " />
 
-<img 
+    <img 
           src={ms} alt="Lolo Andoche" 
           className="w-1/6 sm:w-1/6 " />
         
@@ -214,9 +214,9 @@ const Partenaires = () => {
           src={lesTradipraticiens} alt="OFMAS" 
           className="w-1/6 sm:w-1/6 " />
         
-      </div>
+  </div>
 
-         </div>
+</div>
   );
 };
 
