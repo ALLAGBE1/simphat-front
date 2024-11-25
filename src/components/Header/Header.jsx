@@ -83,7 +83,7 @@ export const Header = () => {
           )}
           <Link to="/" className="hover:text-gray-200 text-white text-lg font-bold">ACCUEIL</Link>
           <Link to="/honoraryCommittee" className="hover:text-gray-200 text-white text-lg font-bold">COMITÉ D’HONNEUR</Link>
-          <Link to="/sponsors" className="hover:text-gray-200 text-white text-lg font-bold">SPONSORS</Link>
+          {/* <Link to="/sponsors" className="hover:text-gray-200 text-white text-lg font-bold">SPONSORS</Link> */}
 
           {/* Titre de section sans lien pour "ACTIVITÉS" */}
           <h2 className="text-lg font-bold mt-4 mb-2 text-customLightGray">ACTIVITÉS</h2>
