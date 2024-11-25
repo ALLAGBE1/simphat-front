@@ -21,11 +21,11 @@ export default function Footer() {
                         COMITÉ D’HONNEUR
                     </h2>
                 </Link>
-                <Link to="/sponsors" className="">
+                {/* <Link to="/sponsors" className="">
                     <h2 className="text-base sm:text-lg md:text-xl lg:text-1xl xl:text-1xl font-medium uppercase text-[#ffffff]">
                         SPONSORS
                     </h2>
-                </Link>
+                </Link> */}
                 <Link to="/participer" className="">
                     <h2 className="text-base sm:text-lg md:text-xl lg:text-1xl xl:text-1xl font-medium uppercase text-[#ffffff]">
                         PARTICIPER
