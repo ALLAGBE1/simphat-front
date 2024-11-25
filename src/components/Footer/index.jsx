@@ -65,11 +65,11 @@ export default function Footer() {
                         VISION, MISSION & VALEURS
                     </h2>
                 </Link>
-                <Link to="/sponsors" rel="noreferrer" className="">
+                {/* <Link to="/sponsors" rel="noreferrer" className="">
                     <h2 className="text-base sm:text-lg md:text-xl lg:text-1xl xl:text-1xl font-medium uppercase text-[#ffffff]">
                         SPONSORS 
                     </h2>
-                </Link>
+                </Link> */}
                 <Link to="/contact" rel="noreferrer" className="">
                     <h2 className="text-base sm:text-lg md:text-xl lg:text-1xl xl:text-1xl font-medium uppercase text-[#ffffff]">
                         CONTACTS
